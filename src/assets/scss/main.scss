@@ -1,0 +1,10 @@
+/* Import thứ tự: tailwind -> base -> components -> utilities */
+@use "./base.scss";
+@use "./components.scss";
+@use "./utilities.scss";
+@import "tailwindcss";
+
+
+.test-red{
+    color: red !important;
+}
