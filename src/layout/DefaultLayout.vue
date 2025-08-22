@@ -21,6 +21,12 @@
       </el-container>
       <FooterBar />
     </el-container>
+    <el-container class="app-shell" direction="vertical">
+    <el-main class="app-main">
+      <router-view />
+    </el-main>
+  </el-container>
+
 </template>
 
 <script setup>

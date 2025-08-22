@@ -19,3 +19,4 @@ app.use(ElementPlus);
 app.use(router);
 app.use(createHead());
 app.mount("#app");
+export default router;
