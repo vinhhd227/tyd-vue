@@ -2,16 +2,18 @@ import { createRouter, createWebHistory } from 'vue-router';
 import { useAuthStore } from '@/stores/auth';
 
 const routes = [
-  { path: '/', component: () => import('@/pages/Home.vue') },
-  { path: '/blog', component: () => import('@/pages/BlogList.vue') },
-  { path: '/blog/:slug', component: () => import('@/pages/BlogPost.vue') },
+  { path: '/', name: 'Home', component: () => import('@/pages/Home.vue') },
+  { path: '/blog', name: 'BlogList', component: () => import('@/pages/BlogList.vue') },
+  { path: '/blog/:slug', name: 'BlogPost', component: () => import('@/pages/BlogPost.vue') },
+  { path: '/login', name: 'Login', component: () => import('@/pages/Login.vue') },
 
-  { path: '/login', component: () => import('@/pages/Login.vue') },
+  // Admin routes (commented out for now)
   // { path: '/admin', component: () => import('@/pages/admin/Dashboard.vue'), meta: { requiresAdmin: true } },
   // { path: '/admin/posts', component: () => import('@/pages/admin/Posts.vue'), meta: { requiresAdmin: true } },
   // { path: '/admin/posts/new', component: () => import('@/pages/admin/PostEdit.vue'), meta: { requiresAdmin: true } },
   // { path: '/admin/posts/:id', component: () => import('@/pages/admin/PostEdit.vue'), meta: { requiresAdmin: true } },
-];
+]
+
 
 const router = createRouter({ history: createWebHistory(), routes });
 
@@ -23,5 +25,5 @@ router.beforeEach(async (to) => {
   }
   return true;
 });
-
 export default router;
+
