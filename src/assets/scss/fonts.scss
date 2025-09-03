@@ -1,0 +1,46 @@
+/* src/assets/css/fonts.css */
+
+/* Montserrat – heading */
+@font-face{
+  font-family: "Montserrat";
+  src:
+    url("../fonts/Montserrat-VariableFont_wght.woff2") format("woff2-variations"),
+    url("../fonts/Montserrat-VariableFont_wght.ttf") format("truetype"); /* fallback tùy chọn */
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face{
+  font-family: "Montserrat";
+  src:
+    url("../fonts/Montserrat-Italic-VariableFont_wght.woff2") format("woff2-variations"),
+    url("../fonts/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Inter – body */
+@font-face{
+  font-family: "Inter";
+  src:
+    url("../fonts/Inter-VariableFont_opsz,wght.woff2") format("woff2-variations"),
+    url("../fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+  font-optical-sizing: auto; /* Inter có opsz */
+}
+@font-face{
+  font-family: "Inter";
+  src:
+    url("../fonts/Inter-Italic-VariableFont_opsz,wght.woff2") format("woff2-variations"),
+    url("../fonts/Inter-Italic-VariableFont_opsz,wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+  font-optical-sizing: auto;
+}
+
+/* Tránh fake bold/italic khi đã có font thật */
+html { font-synthesis-weight: none; font-synthesis-style: none; }

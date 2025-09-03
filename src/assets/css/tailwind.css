@@ -1,1 +1,10 @@
 @import "tailwindcss" prefix(tw);
+@import "tailwindcss" important;
+
+@theme {
+  /* Đặt default body => lớp tw-font-sans */
+  --font-sans: Inter, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+
+  /* Thêm font heading => sinh lớp tw-font-heading */
+  --font-heading: "Montserrat", Inter, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
