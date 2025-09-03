@@ -12,6 +12,7 @@
     "@element-plus/icons-vue": "^2.3.2",
     "@supabase/supabase-js": "^2.55.0",
     "@vueuse/head": "^2.0.0",
+    "dayjs": "^1.11.18",
     "dompurify": "^3.2.6",
     "element-plus": "^2.10.7",
     "markdown-it": "^14.1.0",

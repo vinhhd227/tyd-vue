@@ -1,12 +1,14 @@
+// Style
 import "element-plus/dist/index.css";
-
 import '@/assets/scss/main.scss'
 import '@/assets/css/tailwind.css'
 import { createApp } from "vue";
-
+// Pinia
 import { createPinia } from "pinia";
-
+// Element Plus
 import ElementPlus from "element-plus";
+// Plugins
+import dayjsPlugin from './plugins/dayjs'
 
 import { createHead } from "@vueuse/head";
 import router from "./router";
@@ -14,6 +16,7 @@ import router from "./router";
 import App from "./App.vue";
 
 const app = createApp(App);
+app.use(dayjsPlugin);
 app.use(createPinia());
 app.use(ElementPlus);
 app.use(router);

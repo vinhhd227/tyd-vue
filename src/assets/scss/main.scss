@@ -1,10 +1,12 @@
 /* Import thứ tự: tailwind -> base -> components -> utilities */
 @use "./base.scss";
+@use "./fonts.scss";
 @use "./components.scss";
 @use "./utilities.scss";
-@import "tailwindcss";
 
 
-.test-red{
-    color: red !important;
+:root {
+  /* EP dùng biến này cho toàn bộ component */
+  --el-font-family: var(--font-sans); /* lấy từ @theme ở trên */
 }
+body { font-family: var(--el-font-family); }
