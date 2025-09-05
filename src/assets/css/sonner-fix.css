@@ -1,0 +1,28 @@
+/* Ưu tiên cao hơn overlay của Element Plus */
+:root { --sonner-z-index: 99999; }
+
+/* Ép Sonner về fixed + nổi trên cùng */
+[data-sonner-toaster] {
+  position: fixed !important;
+  z-index: var(--sonner-z-index) !important;
+  pointer-events: none; /* Sonner khuyến nghị */
+  background-color: white !important;
+}
+
+/* Cho phép click bên trong toast */
+[data-sonner-toaster] * { pointer-events: auto; }
+
+/* Cố định toạ độ cho bottom-right (bạn đang dùng) */
+[data-sonner-toaster][data-y-position="bottom"][data-x-position="right"] {
+  top: auto !important;
+  left: auto !important;
+  right: var(--offset-right, 24px) !important;
+  bottom: var(--offset-bottom, 24px) !important;
+}
+
+/* (Tùy chọn) nếu Tailwind/Reset làm ol bị margin/padding lạ */
+[data-sonner-toaster] {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}

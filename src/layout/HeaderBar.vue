@@ -155,9 +155,9 @@ const menus = [
     ],
   },
   { label: "Resources", path: "/tai-nguyen" },
-  { label: "Company", path: "/cong-ty" },
+  { label: "Company", path: "/about-us" },
   { label: "Watch demo", path: "/demo" },
-  { label: "Contact us", path: "/lien-he" },
+  { label: "Contact us", path: "/contact" },
 ];
 
 // Tự sinh map index <-> path
@@ -222,11 +222,3 @@ onMounted(() => {
 });
 onUnmounted(() => window.removeEventListener("scroll", onScroll));
 </script>
-<style lang="scss" scoped>
-.el-sub-menu__title {
-  font-size: var(--el-font-size-medium) !important;
-}
-.el-menu-item {
-  font-size: var(--el-font-size-medium) !important;
-}
-</style>
