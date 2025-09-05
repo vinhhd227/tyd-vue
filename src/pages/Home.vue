@@ -50,8 +50,15 @@
       </div>
     </div>
   </HeroBanner>
+
   <FlyCounting />
   <Solutions />
+  <Skydio :videoSrc="'/media/images/skydio-video.mp4'" />
+  <slider />
+  <slidermain />
+  <item />
+  <SuccessStories />
+  <Sponsor />
 </template>
 
 <script setup>
@@ -59,4 +66,10 @@ import HeroVideo from "@/components/HeroVideo.vue";
 import HeroBanner from "@/components/HeroBanner.vue";
 import FlyCounting from "./Home/FlyCounting.vue";
 import Solutions from "./Home/Solutions.vue";
+import Skydio from "./Home/Skydio.vue";
+import slider from "./Home/slider.vue";
+import slidermain from "./Home/slidermain.vue";
+import item from "./Home/item.vue";
+import SuccessStories from "./Home/SuccessStories.vue";
+import Sponsor from "./Home/sponsor.vue";
 </script>
