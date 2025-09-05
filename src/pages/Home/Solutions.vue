@@ -43,6 +43,7 @@ const solutions = ref([
     imageSrc:
       "/media/images/solutions/1.png",
     route: "/solutions/1",
+  
   },
     {
     name: "Solution 4",
