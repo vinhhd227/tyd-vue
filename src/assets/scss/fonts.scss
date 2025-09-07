@@ -20,22 +20,22 @@
   font-display: swap;
 }
 
-/* Inter – body */
+/* Roboto – body */
 @font-face{
-  font-family: "Inter";
+  font-family: "Roboto";
   src:
-    url("../fonts/Inter-VariableFont_opsz,wght.woff2") format("woff2-variations"),
-    url("../fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+    url("../fonts/Roboto-VariableFont_wdth,wght.woff2") format("woff2-variations"),
+    url("../fonts/Roboto-VariableFont_wdth,wght.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
-  font-optical-sizing: auto; /* Inter có opsz */
+  font-optical-sizing: auto; /* Roboto có opsz */
 }
 @font-face{
-  font-family: "Inter";
+  font-family: "Roboto";
   src:
-    url("../fonts/Inter-Italic-VariableFont_opsz,wght.woff2") format("woff2-variations"),
-    url("../fonts/Inter-Italic-VariableFont_opsz,wght.ttf") format("truetype");
+    url("../fonts/Roboto-Italic-VariableFont_wdth,wght.woff2") format("woff2-variations"),
+    url("../fonts/Roboto-Italic-VariableFont_wdth,wght.ttf") format("truetype");
   font-weight: 100 900;
   font-style: italic;
   font-display: swap;

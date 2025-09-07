@@ -15,6 +15,9 @@ import dayjsPlugin from "./plugins/dayjs";
 import sonnerPlugin from "./plugins/sonner";
 import { setupVeeValidate } from "./plugins/vee-validate.config";
 
+// Component
+import { Icon } from "@iconify/vue";
+
 import { createHead } from "@vueuse/head";
 import router from "./router";
 
@@ -27,6 +30,7 @@ app.use(sonnerPlugin);
 app.use(createPinia());
 app.use(ElementPlus);
 app.use(router);
+app.component("icon", Icon);
 app.use(createHead());
 app.mount("#app");
 export default router;

@@ -53,7 +53,7 @@
               mode="horizontal"
               :ellipsis="false"
               @select="handleSelect"
-              class="tw:border-0 header-menu"
+              class="tw:border-0 tw:font-semibold header-menu"
               :class="{ 'is-light': isLight, 'is-dark': !isLight }"
               style="border-bottom: none"
             >

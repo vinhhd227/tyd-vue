@@ -28,7 +28,7 @@
         @click.self="closeVideo"
       >
         <video ref="videoPlayer" controls class="video-player">
-          <source src="/media/videoSS.mp4" type="video/mp4" />
+          <source src="/media/skymedia.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div class="video-text">Success Stories</div>
