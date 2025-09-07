@@ -49,6 +49,7 @@
               background-color="transparent"
               :default-active="activeIndex"
               :text-color="hovered ? 'black' : 'white'"
+              :active-text-color="hovered ? 'black' : 'white'"
               mode="horizontal"
               :ellipsis="false"
               @select="handleSelect"
