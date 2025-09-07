@@ -58,7 +58,7 @@
   <slidermain />
   <item />
   <SuccessStories />
-  <Sponsor />
+  <Partner />
 </template>
 
 <script setup>
@@ -71,5 +71,5 @@ import slider from "./Home/slider.vue";
 import slidermain from "./Home/slidermain.vue";
 import item from "./Home/item.vue";
 import SuccessStories from "./Home/SuccessStories.vue";
-import Sponsor from "./Home/sponsor.vue";
+import Partner from "./Home/Partner.vue";
 </script>

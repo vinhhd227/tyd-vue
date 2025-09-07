@@ -1,9 +1,9 @@
 <template>
   <el-footer
-    class="app-footer tw:h-auto tw:bg-neutral-200 tw:py-8 tw:border-t tw:border-neutral-300 tw:font-heading"
+    class="app-footer tw:h-auto tw:bg-neutral-200 tw:py-5 tw:font-heading"
   >
     <el-container class="tw:mt-3">
-      <el-card class="tw:w-full tw:bg-white/70 tw:backdrop-blur">
+      <el-card class="tw:w-full tw:bg-white/70 tw:backdrop-blur tw:rounded-2xl">
         <div class="tw:flex tw:justify-between">
           <div class="tw:w-1/3">
             <slot name="logo">

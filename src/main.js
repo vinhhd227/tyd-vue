@@ -17,6 +17,7 @@ import { setupVeeValidate } from "./plugins/vee-validate.config";
 
 // Component
 import { Icon } from "@iconify/vue";
+import Vue3Marquee from 'vue3-marquee'
 
 import { createHead } from "@vueuse/head";
 import router from "./router";
@@ -31,6 +32,7 @@ app.use(createPinia());
 app.use(ElementPlus);
 app.use(router);
 app.component("icon", Icon);
+app.use(Vue3Marquee);
 app.use(createHead());
 app.mount("#app");
 export default router;
