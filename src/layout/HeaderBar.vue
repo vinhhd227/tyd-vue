@@ -4,16 +4,12 @@
       'tw:fixed tw:top-0 tw:left-0 tw:right-0 tw:z-50 tw:transition-all',
       'tw:px-4 tw:pt-3',
     ]"
-    @mouseenter="hovered = true"
-    @mouseleave="hovered = false"
   >
     <div
       :class="[
         // bo góc ít hơn, border mảnh, nền trong ngả trắng
         'tw:transition-all tw:rounded-lg tw:border tw:backdrop-blur-md',
-        isLight
-          ? 'tw:bg-white tw:text-black tw:shadow-lg tw:border-black/20'
-          : 'tw:bg-white/30 tw:text-white tw:border-black/20',
+        'tw:bg-white/30 tw:text-black tw:border-black/20',
         // khi hover vào thì nền trắng, chữ đen
         'hover:tw:bg-white hover:tw:text-black',
         'tw:py-3',
@@ -44,8 +40,6 @@
         <div class="tw:flex-1 tw:flex tw:justify-center">
           <slot name="center">
             <el-menu
-              @mouseenter="hovered = true"
-              @mouseleave="hovered = false"
               background-color="transparent"
               :default-active="activeIndex"
               :text-color="hovered ? 'black' : 'white'"
@@ -53,7 +47,7 @@
               mode="horizontal"
               :ellipsis="false"
               @select="handleSelect"
-              class="tw:border-0 tw:font-semibold header-menu"
+              class="tw:border-0 tw:font-semibold header-menu tw:font-heading"
               :class="{ 'is-light': isLight, 'is-dark': !isLight }"
               style="border-bottom: none"
             >
@@ -77,12 +71,13 @@
                     v-for="(child, j) in item.children"
                     :key="j"
                     :index="`${i + 1}-${j + 1}`"
+                    class="tw:font-heading"
                   >
                     {{ child.label }}
                   </el-menu-item>
                 </el-sub-menu>
                 <!-- Không có children => el-menu-item -->
-                <el-menu-item v-else :index="String(i + 1)">
+                <el-menu-item v-else :index="String(i + 1)" class="tw:font-heading">
                   {{ item.label }}
                 </el-menu-item>
               </template>
@@ -93,7 +88,7 @@
         <!-- RIGHT: Darkmode + Auth -->
         <div class="tw:flex tw:items-center tw:gap-2">
           <slot name="right">
-            <el-switch
+            <!-- <el-switch
               v-model="dark"
               inline-prompt
               :active-text="'Dark'"
@@ -121,7 +116,7 @@
                   >
                 </el-dropdown-menu>
               </template>
-            </el-dropdown>
+            </el-dropdown> -->
           </slot>
         </div>
       </nav>
@@ -138,7 +133,7 @@ const route = useRoute();
 
 const dark = ref(false);
 const scrolled = ref(false);
-const hovered = ref(false);
+const hovered = ref(true);
 
 const user = ref(null);
 const avatar = ref("");
@@ -149,10 +144,10 @@ const menus = [
     label: "Products",
     // path: '/san-pham', // (tuỳ chọn) nếu muốn click trực tiếp vào tiêu đề submenu
     children: [
-      { label: "UAV", path: "/san-pham/uav" },
-      { label: "Máy móc công nghiệp", path: "/san-pham/cong-nghiep" },
+      { label: "Drone", path: "/san-pham/uav" },
+      { label: "Intelligent Manufacturing", path: "/san-pham/cong-nghiep" },
       { label: "Cyber Security", path: "/san-pham/cyber-security" },
-      { label: "Hóa chất", path: "/san-pham/hoa-chat" },
+      { label: "Chemicals", path: "/san-pham/hoa-chat" },
     ],
   },
   { label: "Resources", path: "/tai-nguyen" },
@@ -199,7 +194,7 @@ function handleSelect(key) {
   if (p) router.push(p);
 }
 // Light mode khi hover hoặc scroll
-const isLight = computed(() => hovered.value);
+const isLight = computed(() => hovered.value || true);
 
 function applyTheme() {
   document.documentElement.classList.toggle("dark", dark.value);

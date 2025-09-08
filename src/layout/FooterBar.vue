@@ -37,7 +37,7 @@
         <div
           class="tw:flex tw:md:flex-row-reverse tw:justify-between tw:items-start"
         >
-          <div class="tw:flex tw:gap-5 tw:justify-between tw:w-1/2">
+          <div class="tw:flex tw:gap-5 tw:justify-between tw:w-2/3">
             <div
               v-for="section in footerLinks"
               class="tw:flex tw:flex-col tw:gap-3 tw:w-full"
@@ -48,7 +48,7 @@
               }}</a>
             </div>
           </div>
-          <div>
+          <div class="tw:w-1/4">
             <ul class="tw:ml-2">
               <li v-for="info in companyInfo">
                 <span class="tw:font-semibold">{{ info.label }}: </span>
@@ -104,7 +104,7 @@
 <script setup>
 const companyInfo = [
   {
-    content: "P501, Nhat An Buong, 30D Kim Ma Thuong, Giang Vo, Ha Noi.",
+    content: "P501, Nhat An Building, 30D Kim Ma Thuong, Giang Vo, Ha Noi.",
     href: "ttps://maps.app.goo.gl/rgAnBvWSonGp7qiT9",
     label: "Address",
   },
