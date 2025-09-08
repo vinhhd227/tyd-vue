@@ -28,7 +28,7 @@
 
 <script setup lang="js">
 import { ref, onMounted } from 'vue';
-import { supabase } from '@/lib/supabaseClient';
+import { supabase } from '@/lib/supabase';
 import { useHead } from '@vueuse/head';
 
 useHead({ title: 'Blog', meta: [{ name: 'description', content: 'Bài viết giới thiệu & quảng cáo' }] });
