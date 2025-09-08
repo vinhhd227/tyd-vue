@@ -6,50 +6,59 @@
       'tw:uppercase tw:font-semibold',
     ]"
   >
-    <el-space wrap>
+    <div class="tw:flex tw:flex-wrap">
       <el-card
         v-for="s in solutions"
         :key="s.name"
-        class="box-card tw:w-1/4 tw:border-0"
+        class="box-card tw:w-full tw:sm:w-1/2 tw:lg:w-1/4 tw:border-0 tw:shadow-none"
         shadow="hover"
-        header-class="tw:border-b-0"
-        :header="s.name"
+        header-class="tw:border-b-0 tw:pb-0"
       >
-        <img :src="s.imageSrc" />
+        <template #header>
+          <a
+            class="tw:font-semibold tw:text-md tw:hover:text-blue-600 tw:font-heading"
+            :href="s.route"
+            >{{ s.name }}</a
+          >
+        </template>
+        <a :href="s.route">
+          <img
+            :alt="s.description"
+            :src="s.imageSrc"
+            :class="[
+              'tw:rounded-xl',
+              'tw:transition-transform tw:duration-300 tw:hover:scale-105 tw:hover:shadow-lg',
+            ]"
+        /></a>
       </el-card>
-    </el-space>
+    </div>
   </el-container>
 </template>
 <script setup>
 import { ref } from "vue";
 const solutions = ref([
   {
-    name: "Solution 1",
+    name: "Public Safety - DFR",
     description: "Description 1",
-    imageSrc:
-      "/media/images/solutions/1.png",
+    imageSrc: "/media/images/solutions/1.png",
     route: "/solutions/1",
   },
-    {
-    name: "Solution 2",
+  {
+    name: "Utilities",
     description: "Description 1",
-    imageSrc:
-      "/media/images/solutions/1.png",
+    imageSrc: "/media/images/solutions/2.png",
     route: "/solutions/1",
   },
-    {
-    name: "Solution 3",
+  {
+    name: "National Security",
     description: "Description 1",
-    imageSrc:
-      "/media/images/solutions/1.png",
+    imageSrc: "/media/images/solutions/3.png",
     route: "/solutions/1",
-  
   },
-    {
-    name: "Solution 4",
+  {
+    name: "More Solutions",
     description: "Description 1",
-    imageSrc:
-      "/media/images/solutions/1.png",
+    imageSrc: "/media/images/solutions/4.png",
     route: "/solutions/1",
   },
 ]);

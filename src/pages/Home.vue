@@ -54,20 +54,20 @@
   <FlyCounting />
   <Solutions />
   <Skydio :videoSrc="'/media/images/skydio-video.mp4'" />
-  <slider />
-  <slidermain />
+  <Showcase />
+  <!-- <slidermain /> -->
   <item />
-  <SuccessStories />
+  <!-- <SuccessStories /> -->
   <Partner />
 </template>
 
 <script setup>
-import HeroVideo from "@/components/HeroVideo.vue";
+
 import HeroBanner from "@/components/HeroBanner.vue";
 import FlyCounting from "./Home/FlyCounting.vue";
 import Solutions from "./Home/Solutions.vue";
 import Skydio from "./Home/Skydio.vue";
-import slider from "./Home/slider.vue";
+import Showcase from "./Home/Showcase.vue";
 import slidermain from "./Home/slidermain.vue";
 import item from "./Home/item.vue";
 import SuccessStories from "./Home/SuccessStories.vue";

@@ -4,6 +4,7 @@ import "@/assets/scss/main.scss";
 import "@/assets/css/tailwind.css";
 import "vue-sonner/style.css";
 import "@/assets/css/sonner-fix.css";
+import 'vue3-carousel/carousel.css'
 
 import { createApp } from "vue";
 // Pinia
