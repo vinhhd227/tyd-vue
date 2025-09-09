@@ -64,6 +64,7 @@
 <script setup>
 
 import HeroBanner from "@/components/HeroBanner.vue";
+import ScrollBanner from "@/components/ScrollBanner.vue";
 import FlyCounting from "./Home/FlyCounting.vue";
 import Solutions from "./Home/Solutions.vue";
 import Skydio from "./Home/Skydio.vue";

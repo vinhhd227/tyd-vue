@@ -15,6 +15,7 @@ import ElementPlus from "element-plus";
 import dayjsPlugin from "./plugins/dayjs";
 import sonnerPlugin from "./plugins/sonner";
 import { setupVeeValidate } from "./plugins/vee-validate.config";
+import { MotionPlugin } from '@vueuse/motion'
 
 // Component
 import { Icon } from "@iconify/vue";
@@ -29,6 +30,7 @@ setupVeeValidate();
 const app = createApp(App);
 app.use(dayjsPlugin);
 app.use(sonnerPlugin);
+app.use(MotionPlugin)
 app.use(createPinia());
 app.use(ElementPlus);
 app.use(router);

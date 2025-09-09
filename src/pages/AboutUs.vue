@@ -18,15 +18,23 @@
       },
     ]"
   >
-   <div class="tw:max-w-6xl tw:text-white">
+    <div
+      v-motion-slide-visible-bottom
+      :class="['tw:w-full tw:max-w-[70vw]', 'tw:mx-auto', 'tw:text-white']"
+    >
       <h1
-        class="tw:font-heading tw:text-3xl tw:sm:text-6xl tw:font-medium tw:leading-tight tw:drop-shadow-md tw:underline tw:underline-offset-8 tw:tracking-wide"
+        class="tw:font-heading tw:text-3xl tw:sm:text-6xl tw:font-medium tw:leading-tight tw:drop-shadow-md tw:tracking-wide"
       >
-        About TYD
+        <span class="tw:underline tw:underline-offset-20">Ab</span>out TYD
       </h1>
     </div>
   </HeroBanner>
+
+  <Stories />
+  <WhatWeDo />
 </template>
 <script setup>
 import HeroBanner from "@/components/HeroBanner.vue";
+import Stories from "./AboutUs/Stories.vue";
+import WhatWeDo from "./AboutUs/WhatWeDo.vue";
 </script>
