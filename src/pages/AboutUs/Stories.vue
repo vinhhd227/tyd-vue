@@ -1,7 +1,7 @@
 <template>
   <el-container
     direction="vertical"
-    :class="['tw:mx-auto', 'tw:z-10 tw:h-full tw:max-w-[70vw]']"
+    :class="['tw:mx-auto', 'tw:z-10 tw:h-full', 'tw:max-w-[70vw]']"
   >
     <div class="tw:py-20 tw:font-heading tw:font-medium">
       <h2 v-motion-slide-visible-bottom class="tw:text-6xl tw:mb-3">

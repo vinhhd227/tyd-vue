@@ -3,8 +3,11 @@
 
 @theme {
   /* Đặt default body => lớp tw-font-sans */
-  --font-sans: Roboto, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  --font-sans: Roboto, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", sans-serif;
 
   /* Thêm font heading => sinh lớp tw-font-heading */
-  --font-heading: "Montserrat", Roboto, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  --font-heading: "Montserrat", Roboto, system-ui, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+
 }
