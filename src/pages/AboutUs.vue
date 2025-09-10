@@ -32,11 +32,14 @@
 
   <Stories />
   <WhatWeDo />
-
+  <OurMission />
+  <OurFuture />
 </template>
 <script setup>
 import HeroBanner from "@/components/HeroBanner.vue";
 import Stories from "./AboutUs/Stories.vue";
 import WhatWeDo from "./AboutUs/WhatWeDo.vue";
+import OurMission from "./AboutUs/OurMission.vue";
+import OurFuture from "./AboutUs/OurFuture.vue";
 
 </script>
