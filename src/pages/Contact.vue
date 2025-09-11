@@ -1,118 +1,142 @@
 <template>
-  <div class="tw:bg-[url(/media/images/contact.jpg)] tw:h-[100vh]">
-    <el-container
-      :class="[
-        'tw:z-10 tw:mx-auto tw:h-full tw:max-w-7xl tw:px-4 sm:tw:px-6 tw:lg:px-8',
-        ,
-      ]"
-    >
-      <el-row>
-        <!-- LEFT -->
-        <el-col :span="8" class="tw:pt-30 tw:pb-20 tw:text-white">
-          <h1
-            class="tw:text-5xl tw:font-semibold tw:leading-tight tw:font-heading"
+  <el-container :class="['tw:mx-auto tw:min-h-[100vh] tw:max-w-[80vw]']">
+    <el-row class="tw:w-full">
+      <el-col :span="8" class="tw:pt-30 tw:pb-10">
+        <h1 class="tw:text-6xl tw:font-medium tw:leading-tight tw:font-heading">
+          Talk to Sales
+        </h1>
+        <span>
+          Our team is ready to discuss your business and operational needs,
+          schedule a demo or provide a quotation.
+        </span>
+      </el-col>
+      <el-col :offset="8" :span="16">
+        <el-card>
+          <el-form
+            @submit.prevent="onSubmit"
+            class="tw:text-xl"
+            size="large"
+            label-width="auto"
           >
-            Talk to Sales
-          </h1>
-          <span>
-            Our team is ready to discuss your business and operational needs,
-            schedule a demo or provide a quotation.
-          </span>
-        </el-col>
-
-        <!-- RIGHT -->
-        <el-col :offset="8" :span="16">
-          <el-card>
-            <el-form
-              @submit.prevent="onSubmit"
-              class="tw:text-xl"
-              size="large"
-              label-width="auto"
+            <el-form-item
+              :class="{ 'tw:mb-0': showErrors && errors.firstName }"
             >
-              <!-- First Name -->
-              <el-form-item
-                label="First Name"
-                :class="{ 'tw:mb-0': showErrors && errors.firstName }"
+              <el-input v-model="firstName" placeholder="First Name *" />
+              <small
+                class="tw:text-red-500"
+                v-if="showErrors && errors.firstName"
+                >{{ errors.firstName }}</small
               >
-                <el-input v-model="firstName" />
-                <small
-                  class="tw:text-red-500"
-                  v-if="showErrors && errors.firstName"
-                  >{{ errors.firstName }}</small
-                >
-              </el-form-item>
+            </el-form-item>
 
-              <!-- Last Name -->
-              <el-form-item
-                label="Last Name"
-                :class="{ 'tw:mb-0': showErrors && errors.lastName }"
+            <el-form-item :class="{ 'tw:mb-0': showErrors && errors.lastName }">
+              <el-input v-model="lastName" placeholder="Last Name *" />
+              <small
+                class="tw:text-red-500"
+                v-if="showErrors && errors.lastName"
+                >{{ errors.lastName }}</small
               >
-                <el-input v-model="lastName" />
-                <small
-                  class="tw:text-red-500"
-                  v-if="showErrors && errors.lastName"
-                  >{{ errors.lastName }}</small
-                >
-              </el-form-item>
+            </el-form-item>
 
-              <!-- Company -->
-              <el-form-item label="Company Name">
-                <el-input v-model="company" />
-              </el-form-item>
+            <el-form-item>
+              <el-input v-model="company" placeholder="Company Name" />
+            </el-form-item>
 
-              <!-- Email -->
-              <el-form-item
-                label="Email"
-                :class="{ 'tw:mb-0': showErrors && errors.email }"
+            <el-form-item :class="{ 'tw:mb-0': showErrors && errors.email }">
+              <el-input v-model="email" placeholder="Email *" />
+              <small
+                class="tw:text-red-500"
+                v-if="showErrors && errors.email"
+                >{{ errors.email }}</small
               >
-                <el-input v-model="email" />
-                <small
-                  class="tw:text-red-500"
-                  v-if="showErrors && errors.email"
-                  >{{ errors.email }}</small
-                >
-              </el-form-item>
+            </el-form-item>
 
-              <!-- Phone -->
-              <el-form-item
-                label="Phone Number"
-                :class="{ 'tw:mb-0': showErrors && errors.phone }"
+            <el-form-item :class="{ 'tw:mb-0': showErrors && errors.phone }">
+              <el-input v-model="phone" placeholder="Phone Number *" />
+              <small
+                class="tw:text-red-500"
+                v-if="showErrors && errors.phone"
+                >{{ errors.phone }}</small
               >
-                <el-input v-model="phone" />
-                <small
-                  class="tw:text-red-500"
-                  v-if="showErrors && errors.phone"
-                  >{{ errors.phone }}</small
-                >
-              </el-form-item>
+            </el-form-item>
 
-              <!-- Message -->
-              <el-form-item label="Message">
-                <el-input
-                  type="textarea"
-                  :autosize="{ minRows: 4, maxRows: 8 }"
-                  v-model="message"
-                />
-              </el-form-item>
+            <el-form-item>
+              <el-input
+                type="textarea"
+                :autosize="{ minRows: 4, maxRows: 8 }"
+                v-model="message"
+                placeholder="Message"
+              />
+            </el-form-item>
+            <p class="tw:text-sm">
+              TYD is committed to protecting and respecting your privacy, and
+              we’ll only use your personal information to administer your
+              account and to provide the products and services you requested
+              from us. From time to time, we would like to contact you about our
+              products and services, as well as other content that may be of
+              interest to you. If you consent to us contacting you for this
+              purpose, please tick below to say how you would like us to contact
+              you:
+            </p>
+            <el-checkbox
+              :class="{ 'tw:mb-0': showErrors && errors.isGetNewsLetter }"
+              v-model="isGetNewsLetter"
+              >I agree to receive communications from TYD.<span
+                class="tw:text-red-500"
+                >*</span
+              >
+            </el-checkbox>
 
-              <!-- Submit -->
-              <el-form-item>
-                <el-button
-                  type="primary"
-                  size="large"
-                  native-type="submit"
-                  :loading="isSubmitting"
-                  class="tw:bg-black tw:font-semibold tw:text-white tw:hover:bg-white/90 tw:hover:text-black tw:transition tw:text-xl tw:hover:border tw:hover:border-black"
-                >
-                  Submit
-                </el-button>
-              </el-form-item>
-            </el-form>
-          </el-card>
-        </el-col>
-      </el-row>
-    </el-container>
-  </div>
+            <small
+              class="tw:text-red-500 tw:text-xs tw:block tw:h-[25px]"
+              v-if="showErrors && errors.isGetNewsLetter"
+              >{{ errors.isGetNewsLetter }}</small
+            >
+            <p class="tw:text-sm">
+              In order to provide you the content requested, we need to store
+              and process your personal data. If you consent to us storing your
+              personal data for this purpose, please tick the checkbox below.
+            </p>
+            <el-checkbox
+              :class="{ 'tw:mb-0': showErrors && errors.isStorePersonalData }"
+              v-model="isStorePersonalData"
+              >I agree to allow TYD to store and process my personal data.
+              <span class="tw:text-red-500">*</span>
+            </el-checkbox>
+            <small
+              class="tw:text-red-500 tw:text-xs tw:block tw:h-[25px]"
+              v-if="showErrors && errors.isStorePersonalData"
+              >{{ errors.isStorePersonalData }}</small
+            >
+            <p class="tw:text-sm">
+              You can unsubscribe from these communications at any time. For
+              more information on how to unsubscribe, our privacy practices, and
+              how we are committed to protecting and respecting your privacy,
+              please review our Privacy Policy.
+            </p>
+            <!-- Submit -->
+            <el-form-item>
+              <button
+                type="primary"
+                size="large"
+                native-type="submit"
+                :loading="isSubmitting"
+                :class="[
+                  'tw:px-6 tw:py-2',
+                  'tw:my-6',
+                  'tw:rounded-sm',
+                  'tw:bg-black tw:hover:bg-white/90 tw:text-white  tw:hover:text-black tw:hover:border tw:hover:border-black',
+                  ' tw:font-medium tw:transition tw:text-lg',
+                ]"
+              >
+                Submit
+              </button>
+            </el-form-item>
+          </el-form>
+        </el-card>
+      </el-col>
+    </el-row>
+  </el-container>
 </template>
 
 <script setup>
@@ -140,6 +164,12 @@ const schema = z
       .optional()
       .or(z.literal("")),
     message: z.string().trim().optional(),
+    isGetNewsLetter: z.boolean().refine((v) => v === true, {
+      message: "Please complete all required fields",
+    }),
+    isStorePersonalData: z.boolean().refine((v) => v === true, {
+      message: "Please complete all required fields",
+    }),
   })
   .superRefine((data, ctx) => {
     if (!data.email && !data.phone) {
@@ -178,6 +208,8 @@ const {
     email: "",
     phone: "",
     message: "",
+    isGetNewsLetter: false,
+    isStorePersonalData: false,
   },
 });
 
@@ -188,6 +220,8 @@ const [company] = defineField("company");
 const [email] = defineField("email");
 const [phone] = defineField("phone");
 const [message] = defineField("message");
+const [isGetNewsLetter] = defineField("isGetNewsLetter");
+const [isStorePersonalData] = defineField("isStorePersonalData");
 
 const showErrors = computed(() => submitCount.value > 0);
 

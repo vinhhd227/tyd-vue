@@ -1,6 +1,6 @@
 <template>
   <el-footer
-    class="app-footer tw:h-auto tw:bg-neutral-200 tw:py-5 tw:font-heading"
+    class="app-footer tw:h-auto tw:py-5 tw:font-heading"
   >
     <el-container class="tw:mt-3">
       <el-card class="tw:w-full tw:bg-white/70 tw:backdrop-blur tw:rounded-2xl">
