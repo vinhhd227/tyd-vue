@@ -1,15 +1,12 @@
 <template>
   <el-container
     direction="vertical"
-    :class="['tw:mx-auto', 'tw:z-10 tw:h-full', 'tw:max-w-[70vw]']"
+    :class="['tw:mx-auto tw:pb-20', 'tw:z-10 tw:h-full', 'tw:max-w-[70vw]']"
   >
-    <!-- tiêu đề để ngoài khối cột -->
-
     <h2 class="tw:font-heading tw:text-6xl tw:mb-3">Our Future</h2>
     <h3 class="tw:text-3xl tw:font-normal tw:mb-6">
       Aerial data intelligence at your fingertips. Anytime. Anywhere.
     </h3>
-
     <p class="tw:text-md tw:font-normal tw:mb-15">
       Our vision is to fully automate data acquisition processes and to become
       the global leader in AI-powered aerial real-time surveillance. To achieve

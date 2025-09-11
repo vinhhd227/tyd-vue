@@ -20,7 +20,11 @@
   >
     <div
       v-motion-slide-visible-bottom
-      :class="['tw:w-full tw:max-w-[70vw]', 'tw:mx-auto', 'tw:text-white tw:text-left' ]"
+      :class="[
+        'tw:w-full tw:max-w-[70vw]',
+        'tw:mx-auto',
+        'tw:text-white tw:text-left',
+      ]"
     >
       <h1
         class="tw:font-heading tw:text-3xl tw:sm:text-6xl tw:font-medium tw:leading-tight tw:drop-shadow-md tw:tracking-wide"
@@ -33,6 +37,7 @@
   <Stories />
   <WhatWeDo />
   <OurMission />
+  <ManageMentTeam />
   <OurFuture />
 </template>
 <script setup>
@@ -41,5 +46,5 @@ import Stories from "./AboutUs/Stories.vue";
 import WhatWeDo from "./AboutUs/WhatWeDo.vue";
 import OurMission from "./AboutUs/OurMission.vue";
 import OurFuture from "./AboutUs/OurFuture.vue";
-
+import ManageMentTeam from "./AboutUs/Manage­mentTeam.vue";
 </script>
