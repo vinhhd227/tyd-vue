@@ -68,7 +68,7 @@
                   placement="top-start"
                 >
                   <a :href="link.url">
-                    <icon :icon="link.icon" class="tw:text-2xl" />
+                    <iconfy :icon="link.icon" class="tw:text-2xl" />
                   </a>
                 </el-tooltip>
               </div>

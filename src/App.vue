@@ -1,9 +1,8 @@
 <template>
   <Toaster richColors position="bottom-right" />
-  <DefaultLayout />
+  <router-view />
 </template>
 
 <script setup>
-import DefaultLayout from "./layout/DefaultLayout.vue";
-import { Toaster } from "vue-sonner";
+import { Toaster } from 'vue-sonner';
 </script>

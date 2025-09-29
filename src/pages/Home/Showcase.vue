@@ -42,7 +42,7 @@
                     {{ slide.author }}
                   </span>
                 </div>
-                <icon icon="heroicons-outline:share" class="tw:text-2xl" />
+                <iconfy icon="heroicons-outline:share" class="tw:text-2xl" />
               </div>
             </template>
 
