@@ -1,0 +1,82 @@
+{
+  "header": {
+    "home": "Trang chủ",
+    "about": "Về chúng tôi",
+    "products": "Sản phẩm",
+    "contact": "Liên hệ",
+    "categories": {
+      "drone": "Drone",
+      "cybersecurity": "Cybersecurity",
+      "automation": "Robotics",
+      "products": {}
+    }
+  },
+  "pages": {
+    "home": {
+      "ourValue": {
+        "innovation": {
+          "title": "Đổi mới",
+          "description": "Không ngừng đổi mới để tạo ra những giải pháp thông minh, hiệu quả và bền vững"
+        },
+        "integrity": {
+          "title": "Chính trực",
+          "description": "Hành động với sự trung thực và minh bạch trong mọi hợp tác và quyết định"
+        },
+        "excellence": {
+          "title": "Ưu việt",
+          "description": "Hướng đến sự ưu việt – đảm bảo tiêu chuẩn cao nhất trong công nghệ, dịch vụ và độ tin cậy"
+        }
+      },
+      "ourStory": {
+        "label": "CÂU CHUYỆN CỦA CHÚNG TÔI",
+        "title": "Chúng Tôi Tin Vào Sức Mạnh Của Công Nghệ",
+        "description": "Tận sâu bên trong, chúng tôi tin rằng công nghệ có thể thay đổi cách con người kết nối và sáng tạo.Từ thiết bị bay không người lái đến an ninh mạng và robot thông minh, chúng tôi kiến tạo cầu nối giữa con người, máy móc và dữ liệu — giúp doanh nghiệp khám phá khả năng mới, vận hành an toàn và hiệu quả hơn.",
+        "cta": "Khám phá thêm"
+      }
+    },
+    "aboutUs": {
+      "aboutTyd": "Về TYD",
+      "ourMission": "Sứ mệnh của chung tôi là tăng tốc chuyển đổi công nghệ cho doanh nghiệp và cộng đồng bằng các giải pháp thông minh, hiệu quả, dễ triển khai và có tính ứng dụng cao.",
+      "ourFuture": {
+        "title": "Kiến tạo công nghệ để thúc đẩy tương lai",
+        "content": "Tầm nhìn của chúng tôi là trở thành nhà cung cấp giải pháp công nghệ tiên phong tại Việt Nam, góp phần nâng cấp trải nghiệm, hiệu suất và năng lực cạnh tranh toàn cầu của các đối tác."
+      },
+      "ourStories": {
+        "begin": "Từ những ngày đầu hoạt động trong quy mô nhỏ, chúng tôi đã nhanh chóng mở rộng năng lực R&D, hợp tác với các đối tác quốc tế và xây dựng danh mục sản phẩm đa dạng trải dài từ thiết bị phần cứng, phần mềm đến các giải pháp tích hợp.",
+        "progress": "Trên hành trình đó, công ty không ngừng đầu tư vào đổi mới sáng tạo, chuẩn hóa quy trình và phát triển nguồn nhân lực chất lượng cao, từng bước định hình vị thế của mình trên bản đồ công nghệ tại Việt Nam."
+      }
+    },
+    "contact": {
+      "title": "Liên hệ",
+      "subtitle": "Chúng tôi sẵn sàng hỗ trợ bạn – tư vấn giải pháp, demo sản phẩm và báo giá chi tiết.",
+      "label": {
+        "address": "Địa chỉ",
+        "email": "Email",
+        "phone": "Điện thoại"
+      },
+      "info": {
+        "companyName": "CÔNG TY CỔ PHẦN CÔNG NGHỆ TYD",
+        "address": "TT3-32 Đường CN 9, Hòe Thị, Nam Từ Liêm, Hà Nội, Việt Nam",
+        "email": "contact@tydvn.com",
+        "phone": "0000 000 000"
+      },
+      "form": {
+        "fullName": "Họ tên",
+        "email": "Email",
+        "phone": "Số điện thoại",
+        "message": "Lời nhắn",
+        "or": "hoặc",
+        "submit": "Gửi",
+        "success": "Cảm ơn bạn đã gửi tin nhắn. Đội ngũ của chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất.",
+        "error": "Rất tiếc, yêu cầu của bạn chưa được xử lý. Vui lòng thử lại sau.",
+        "timeout": "Kết nối bị gián đoạn. Vui lòng kiểm tra mạng của bạn và thử lại sau.",
+        "invalid": {
+          "fullName": "Vui lòng nhập họ tên",
+          "contact": "Vui lòng nhập email hoặc số điện thoại",
+          "email": "Email không hợp lệ",
+          "phone": "Số điện thoại không hợp lệ"
+        }
+      }
+    }
+  }
+}

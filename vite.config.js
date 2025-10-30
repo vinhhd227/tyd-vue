@@ -10,7 +10,13 @@ export default defineConfig({
     vue(),
     tailwindcss(),
     AutoImport({
-      imports: ["vue"], // auto-import ref, reactive, computed, watch...
+      imports: [
+        "vue",
+        {
+          "vue-i18n": ["useI18n"], // ✅ tự import useI18n
+          "@/plugins/i18n": ["setLocale"], // ✅ tự import setLocale
+        },
+      ], // auto-import ref, reactive, computed, watch...
       dts: "src/auto-imports.d.ts", // (JS có thể bỏ)
       eslintrc: { enabled: true }, // tạo rules cho eslint
     }),

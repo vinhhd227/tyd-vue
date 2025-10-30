@@ -1,0 +1,67 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "contact": "Contact us"
+  },
+  "pages": {
+    "home": {
+      "ourValue": {
+        "innovation": {
+          "title": "Innovation",
+          "description": "We constantly innovate to bring smarter, more efficient, and sustainable solutions"
+        },
+        "integrity": {
+          "title": "Integrity",
+          "description": "We act with honesty and transparency in every partnership and decision"
+        },
+        "excellence": {
+          "title": "Excellence",
+          "description": "We pursue the highest standards in technology, service, and reliability"
+        }
+      },
+      "ourStory": {
+        "label": "OUR STORY",
+        "title": "We Believe in the Power of Technology",
+        "description": "At our core, we are driven by the transformative potential of technology. From unmanned aerial systems to cybersecurity and robotics, we create bridges between people, machines, and data — helping businesses explore new possibilities and operate smarter, safer, and more efficiently.",
+        "cta": "Explore More"
+      }
+    },
+    "aboutUs": {
+      "ourMission": "Our mission is to provide a complete solution to the needs of our customers, while ensuring that the quality of our products is always at the top of our priority list."
+    },
+    "contact": {
+      "title": "Contact",
+      "subtitle": "Our team is ready to assist you — from solution consulting to demos and quotations.",
+      "label": {
+        "address": "Address",
+        "email": "Email",
+        "phone": "Phone"
+      },
+      "info": {
+        "companyName": "TYD TECHNOLOGY JSC",
+        "address": "No. TT3-32, CN9 Street, Hoe Thi, Nam Tu Liem District, Hanoi, Vietnam",
+        "email": "contact@tydvn.com",
+        "phone": "(+84) 000 000 000"
+      },
+      "form": {
+        "fullName": "Full Name",
+        "email": "Email",
+        "phone": "Phone Number",
+        "message": "Message",
+        "or": "or",
+        "submit": "Submit",
+        "success": "Thank you for your message. Our team will contact you as soon as possible.",
+        "error": "We’re sorry, your submission could not be processed. Please try again later.",
+        "timeout": "Connection timed out. Please check your internet connection and try again.",
+        "invalid": {
+          "fullName": "Input your full name",
+          "contact": "Provide an email or phone number",
+          "email": "Invalid email",
+          "phone": "Invalid phone number"
+        }
+      }
+    }
+  }
+}

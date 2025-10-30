@@ -3,8 +3,41 @@
 
 @theme {
   /* Đặt default body => lớp tw-font-sans */
-  --font-sans: Inter, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  --font-sans: Roboto, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", sans-serif;
 
   /* Thêm font heading => sinh lớp tw-font-heading */
-  --font-heading: "Montserrat", Inter, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  --font-heading: "Montserrat", Roboto, system-ui, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+
+  --breakpoint-xs: 30rem;
+  --breakpoint-2xl: 100rem;
+  --breakpoint-3xl: 120rem;
+  --breakpoint-4xl: 121rem;
+}
+
+@layer components {
+  .el-menu--horizontal .el-menu-item.is-active {
+    border-bottom-color: transparent !important;
+  }
+
+  .tw-menu-underline {
+    @apply tw:relative tw:inline-block tw:pb-1;
+  }
+
+  .tw-menu-underline::after {
+    content: "";
+    @apply tw:absolute tw:left-1/2 tw:bottom-[-1px]
+           tw:h-[2px] tw:w-0 tw:transition-[width] tw:duration-300 tw:ease-in-out
+           tw:transform tw:-translate-x-1/2;
+    background-color: currentColor;
+  }
+
+  .tw-menu-underline:hover::after {
+    @apply tw:w-full;
+  }
+
+  .el-menu--horizontal .el-menu-item.is-active .tw-menu-underline::after {
+    @apply tw:w-full;
+  }
 }

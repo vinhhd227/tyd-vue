@@ -42,4 +42,6 @@ const fieldMap = {
   lastName: "Last name",
   email: "Email",
   phone: "Phone",
+  isGetNewsLetter: "Get newsletter",
+  isStorePersonalData: "Store personal data",
 };

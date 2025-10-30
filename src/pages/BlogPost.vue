@@ -11,7 +11,7 @@
 <script setup lang="ts">
 import { onMounted, ref, computed } from 'vue';
 import { useRoute } from 'vue-router';
-import { supabase } from '@/lib/supabaseClient';
+import { supabase } from '@/lib/supabase';
 import MarkdownIt from 'markdown-it';
 import DOMPurify from 'dompurify';
 import { useHead } from '@vueuse/head';
