@@ -1,7 +1,7 @@
 <template>
   <div :class="['tw:pb-0 tw:pt-20 tw:md:pt-25']">
     <el-carousel class="hero-carousel">
-      <el-carousel-item v-for="item in hero" :key="item">
+      <el-carousel-item v-motion-fade v-for="item in hero" :key="item">
         <div :class="['tw:h-full tw:w-full', 'tw:bg-white']">
           <div
             :class="[
@@ -18,7 +18,7 @@
               ]"
             >
               <h2
-                v-motion-roll-visible-right
+                v-motion-pop-visible
                 :class="[
                   'tw:font-heading tw:font-semibold tw:text-2xl tw:xl:text-4xl',
                   'tw:mb-2',
@@ -27,7 +27,7 @@
                 {{ $t(item.title) }}
               </h2>
               <p
-                v-motion-roll-visible-right
+                v-motion-pop-visible
                 :class="[
                   'tw:font-light',
                   'tw:text-md tw:xl:text-lg',
@@ -36,16 +36,13 @@
               >
                 {{ $t(item.description) }}
               </p>
-              <el-button
-                v-motion-roll-visible-right
-                size="large"
-                color="#000000"
-              >
+              <el-button v-motion-pop-visible size="large" color="#000000">
                 <span class="tw:mr-2">{{ $t(item.cta) }}</span>
                 <iconfy icon="mingcute:arrow-right-fill" />
               </el-button>
             </div>
             <div
+              v-motion-fade-visible
               :class="[
                 'tw:w-full tw:lg:w-3/5',
                 ' tw:h-[200px] tw:md:h-[350px] tw:lg:h-[400px] tw:xl:h-[600px] tw:4xl:h-[750px]',
@@ -53,7 +50,6 @@
               ]"
             >
               <img
-                v-motion-pop-visible
                 :class="[
                   'tw:rounded-xl',
                   'tw:object-cover',
