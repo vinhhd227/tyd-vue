@@ -17,7 +17,7 @@
         'tw:flex tw:flex-col tw:items-center tw:justify-center',
         'tw:transition-all tw:rounded-lg tw:border tw:backdrop-blur-md',
         'tw:text-black tw:border-black/20',
-        isMenuHovered ? 'tw:bg-white' : 'tw:bg-white/30',
+        isMenuHovered || isAsideExpanded ? 'tw:bg-white' : 'tw:bg-white/30',
         'hover:tw:bg-white hover:tw:text-black',
         'tw:w-full',
         'tw:lg:w-[80vw]',
@@ -225,7 +225,7 @@
       <el-scrollbar
         :class="[
           ' tw:bg-white tw:w-full tw:mt-1',
-          isAsideExpanded ? 'tw:h-[90vh]' : 'tw:h-0',
+          isAsideExpanded ? 'tw:h-[80vh]' : 'tw:h-0',
           'tw:rounded-b-xl',
           'tw:overflow-x-hidden',
           'tw:trasition-[height] tw:duration-300 tw:ease-in-out',
