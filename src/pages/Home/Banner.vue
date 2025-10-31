@@ -18,23 +18,32 @@
               ]"
             >
               <h2
-                v-motion-pop-visible
+                v-motion-roll-visible-right
                 :class="[
                   'tw:font-heading tw:font-semibold tw:text-2xl tw:xl:text-4xl',
                   'tw:mb-2',
                 ]"
               >
-                {{ item.title }}
+                {{ $t(item.title) }}
               </h2>
               <p
-                v-motion-pop-visible
-                :class="['tw:font-light', 'tw:text-md tw:xl:text-lg', 'tw:mb-3']"
+                v-motion-roll-visible-right
+                :class="[
+                  'tw:font-light',
+                  'tw:text-md tw:xl:text-lg',
+                  'tw:mb-3',
+                ]"
               >
-                {{ item.description }}
+                {{ $t(item.description) }}
               </p>
-              <el-button v-motion-pop-visible size="large" color="#000000">{{
-                item.button
-              }}</el-button>
+              <el-button
+                v-motion-roll-visible-right
+                size="large"
+                color="#000000"
+              >
+                <span class="tw:mr-2">{{ $t(item.cta) }}</span>
+                <iconfy icon="mingcute:arrow-right-fill" />
+              </el-button>
             </div>
             <div
               :class="[
@@ -64,53 +73,49 @@
 const hero = reactive([
   {
     background: "/media/images/hero-uav.webp",
-    title: "Giải pháp UAV & Hệ thống điều khiển tầm xa",
-    description:
-      "Từ thiết bị bay đến hệ thống truyền dữ liệu, phục vụ giám sát, huấn luyện và công nghiệp",
-    button: "Tìm hiểu UAV",
+    title: "pages.home.banner.drone.title",
+    description: "pages.home.banner.drone.description",
+    cta: "pages.home.banner.drone.cta",
   },
   {
     background: "/media/images/hero-cyber.webp",
-    title: "Giải pháp bảo mật toàn diện cho hạ tầng số",
-    description:
-      "Phát hiện, giám sát và ngăn chặn mối đe dọa – bảo vệ dữ liệu và hệ thống doanh nghiệp",
-    button: "Xem giải pháp bảo mật",
+    title: "pages.home.banner.cybersecurity.title",
+    description: "pages.home.banner.cybersecurity.description",
+    cta: "pages.home.banner.cybersecurity.cta",
   },
   {
     background: "/media/images/hero-robotic.jpeg",
-    title: "Robot và tự động hóa thông minh cho tương lai sản xuất",
-    description:
-      "Phát triển và tích hợp robot công nghiệp, robot tự hành và hệ thống Smart Factory",
-    button: "Khám phá Robotics",
+    title: "pages.home.banner.automation.title",
+    description: "pages.home.banner.automation.description",
+    cta: "pages.home.banner.automation.cta",
   },
 ]);
 </script>
 <style scoped>
 /* áp cho mọi màn hình */
 :deep(.hero-carousel .el-carousel__container) {
-  height: 50vh;
+  height: 450px;
 }
 /* md ≥ 768px */
 @media (min-width: 768px) {
   :deep(.hero-carousel .el-carousel__container) {
-    height: 50vh;
+    height: 500px;
   }
 }
-
 /* lg ≥ 1024px */
 @media (min-width: 1024px) {
   :deep(.hero-carousel .el-carousel__container) {
-    height: 30vh;
+    height: 450px;
   }
 }
 @media (min-width: 1280px) {
   :deep(.hero-carousel .el-carousel__container) {
-    height: 60vh;
+    height: 650px;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 2048px) {
   :deep(.hero-carousel .el-carousel__container) {
-    height: 60vh;
+    height: 800px;
   }
 }
 </style>

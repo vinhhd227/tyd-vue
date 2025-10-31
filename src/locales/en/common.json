@@ -7,6 +7,23 @@
   },
   "pages": {
     "home": {
+      "banner": {
+        "drone": {
+          "title": "Drone & Ground Control System Solutions",
+          "description": "From aerial platforms to data link systems — enabling precision, safety, and efficiency for industrial and mission-critical applications.",
+          "cta": "Explore Drone Solutions"
+        },
+        "cybersecurity": {
+          "title": "Comprehensive Cybersecurity for Digital Infrastructure",
+          "description": "Detect, monitor, and defend against cyber threats to safeguard enterprise data, networks, and operations.",
+          "cta": "View Cybersecurity Solutions"
+        },
+        "automation": {
+          "title": "Smart Robotics and Automation for Modern Manufacturing",
+          "description": "Integrating industrial robots, autonomous systems, and smart factory technologies to enhance productivity and reliability.",
+          "cta": "Discover Robotics"
+        }
+      },
       "ourValue": {
         "innovation": {
           "title": "Innovation",

@@ -13,6 +13,23 @@
   },
   "pages": {
     "home": {
+      "banner": {
+        "drone": {
+          "title": "Giải pháp UAV & Hệ thống điều khiển tầm xa",
+          "description": "Từ thiết bị bay đến hệ thống truyền dữ liệu, phục vụ giám sát, huấn luyện và công nghiệp",
+          "cta": "Tìm hiểu UAV"
+        },
+        "cybersecurity": {
+          "title": "Giải pháp bảo mật toàn diện cho hạ tầng số",
+          "description": "Phát hiện, giám sát và ngăn chặn mối đe dọa – bảo vệ dữ liệu và hệ thống doanh nghiệp",
+          "cta": "Xem giải pháp bảo mật"
+        },
+        "automation": {
+          "title": "Giải pháp robot tự hành và tự động hóa linh hoạt cho dây chuyền sản xuất hiện đại",
+          "description": "Phát triển và tích hợp robot công nghiệp, robot tự hành và hệ thống Smart Factory",
+          "cta": "Khám phá Robotics"
+        }
+      },
       "ourValue": {
         "innovation": {
           "title": "Đổi mới",
