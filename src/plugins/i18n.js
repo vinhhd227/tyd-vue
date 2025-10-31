@@ -26,7 +26,7 @@ export const i18n = createI18n({
   },
 });
 
-const messageLoaders = import.meta.glob("../locales/*/*.json");
+const messageLoaders = import.meta.glob("../locales/**/*.json");
 const loaded = new Set();
 
 function keysForLocale(locale) {
