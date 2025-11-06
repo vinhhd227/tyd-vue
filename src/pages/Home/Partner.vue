@@ -2,7 +2,7 @@
   <el-container
     v-motion-pop
     direction="vertical"
-    class="tw:bg-gray-200 tw:w-full"
+    class="tw:bg-gray-100 tw:w-full"
   >
     <Vue3Marquee :pause-on-hover="false" :clone="true" :duration="25">
       <div v-for="(p, idx) in partners" :key="idx" class="tw:p-5 tw:h-[120px]">

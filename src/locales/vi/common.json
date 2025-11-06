@@ -1,14 +1,43 @@
 {
-  "header": {
-    "home": "Trang chủ",
-    "about": "Về chúng tôi",
-    "products": "Sản phẩm",
-    "contact": "Liên hệ",
-    "categories": {
-      "drone": "Drone",
-      "cybersecurity": "Cybersecurity",
-      "automation": "Robotics",
-      "products": {}
+  "layout": {
+    "header": {
+      "home": "Trang chủ",
+      "about": "Về chúng tôi",
+      "products": "Sản phẩm",
+      "contact": "Liên hệ",
+      "categories": {
+        "drone": "Drone",
+        "cybersecurity": "Cybersecurity",
+        "automation": "Robotics",
+        "products": {}
+      }
+    },
+    "footer": {
+      "description": "Giải pháp UAV, an ninh mạng và tự động hóa công nghiệp.",
+      "company": {
+        "title": "Công ty",
+        "projects": "Dự án",
+        "about": "Giới thiệu",
+        "contact": "Liên hệ"
+      },
+      "solutions": {
+        "title": "Giải pháp",
+        "uav_gcs": "UAV & GCS",
+        "cybersecurity": "An ninh mạng",
+        "automation": "Tự động hóa"
+      },
+      "legal": {
+        "title": "Pháp lý",
+        "privacy": "Chính sách bảo mật",
+        "cookie": "Chính sách cookie",
+        "terms": "Điều khoản dịch vụ"
+      },
+      "newsletter": {
+        "title": "Đăng ký nhận tin",
+        "placeholder": "you@company.com",
+        "subscribe": "Đăng ký"
+      },
+      "copyright": "© {year} Công Ty Cổ Phần Công Nghệ TYD. Bản quyền thuộc về TYD."
     }
   },
   "pages": {
@@ -30,7 +59,30 @@
           "cta": "Khám phá Robotics"
         }
       },
+      "ourStory": {
+        "label": "CÂU CHUYỆN CỦA CHÚNG TÔI",
+        "title": "Chúng Tôi Tin Vào Sức Mạnh Của Công Nghệ",
+        "description": "Tận sâu bên trong, chúng tôi tin rằng công nghệ có thể thay đổi cách con người kết nối và sáng tạo.Từ thiết bị bay không người lái đến an ninh mạng và robot thông minh, chúng tôi kiến tạo cầu nối giữa con người, máy móc và dữ liệu — giúp doanh nghiệp khám phá khả năng mới, vận hành an toàn và hiệu quả hơn.",
+        "cta": "Khám phá thêm"
+      },
+      "ourCoreSolution": {
+        "label": "Sản phẩm & Giải pháp",
+        "description": "Chúng tôi cung cấp các giải pháp toàn diện trong ba lĩnh vực trọng tâm: UAV & Hệ thống điều khiển tầm xa, An ninh mạng, và Tự động hóa & Robot thông minh. Từ việc phát triển thiết bị, phần mềm điều khiển đến tích hợp dữ liệu và vận hành thông minh, các giải pháp của chúng tôi được thiết kế để giúp doanh nghiệp hoạt động hiệu quả hơn, an toàn hơn và sẵn sàng cho tương lai số.",
+        "drone": {
+          "title": "UAV & GSC",
+          "description": "Cung cấp các giải pháp UAV chuyên nghiệp phục vụ giám sát, cứu hộ – cứu nạn và ứng dụng công nghiệp"
+        },
+        "cybersecurity": {
+          "title": "An ninh mạng",
+          "description": "Bảo vệ hạ tầng số của doanh nghiệp với các giải pháp giám sát, phát hiện và phản ứng trước mối đe dọa — đảm bảo an toàn dữ liệu, mạng và ứng dụng"
+        },
+        "automation": {
+          "title": "Tự động hóa",
+          "description": "Triển khai hệ thống robot tự hành và dây chuyền tự động, tích hợp cảm biến, thị giác máy tính và AI để nâng cao năng suất và giảm thiểu sai sót trong sản xuất"
+        }
+      },
       "ourValue": {
+        "label": "Giá trị cốt lõi",
         "innovation": {
           "title": "Đổi mới",
           "description": "Không ngừng đổi mới để tạo ra những giải pháp thông minh, hiệu quả và bền vững"
@@ -44,11 +96,46 @@
           "description": "Hướng đến sự ưu việt – đảm bảo tiêu chuẩn cao nhất trong công nghệ, dịch vụ và độ tin cậy"
         }
       },
-      "ourStory": {
-        "label": "CÂU CHUYỆN CỦA CHÚNG TÔI",
-        "title": "Chúng Tôi Tin Vào Sức Mạnh Của Công Nghệ",
-        "description": "Tận sâu bên trong, chúng tôi tin rằng công nghệ có thể thay đổi cách con người kết nối và sáng tạo.Từ thiết bị bay không người lái đến an ninh mạng và robot thông minh, chúng tôi kiến tạo cầu nối giữa con người, máy móc và dữ liệu — giúp doanh nghiệp khám phá khả năng mới, vận hành an toàn và hiệu quả hơn.",
-        "cta": "Khám phá thêm"
+      "ourHighlights": {
+        "label": "Dự án và Ứng dụng Nổi bật",
+        "constructionSites": {
+          "title": "Giám sát công trường bằng UAV",
+          "description": "Theo dõi tiến độ và an toàn lao động tại công trình lớn bằng hệ thống drone và truyền hình ảnh thời gian thực"
+        },
+        "rescueUAV": {
+          "title": "Cứu hộ khẩn cấp bằng thiết bị bay tầm xa",
+          "description": "Ứng dụng UAV tầm trung hỗ trợ tìm kiếm, cứu nạn và truyền thông tin nhanh chóng trong điều kiện nguy hiểm"
+        },
+        "networkSecurity": {
+          "title": "Hệ thống phát hiện xâm nhập mạng bằng AI",
+          "description": "Giải pháp phân tích dữ liệu và nhận diện hành vi bất thường, phát hiện sớm tấn công mạng"
+        },
+        "enterpriseSecurity": {
+          "title": "Dashboard giám sát an ninh mạng doanh nghiệp",
+          "description": "Bảng điều khiển trực quan theo dõi tình trạng bảo mật, nhật ký truy cập và cảnh báo rủi ro theo thời gian thực"
+        },
+        "factoryAutomation": {
+          "title": "Robot tự hành vận chuyển trong nhà máy",
+          "description": "Robot AMR định tuyến tự động, giao hàng giữa các khu vực sản xuất, tối ưu vận hành"
+        },
+        "quadrupedRobot": {
+          "title": "Robot chó bốn chân cứu hộ & tuần tra",
+          "description": "Robot bốn chân linh hoạt, có khả năng vượt địa hình phức tạp, mang cảm biến và camera để phục vụ công tác cứu hộ, tuần tra và giám sát công nghiệp"
+        },
+        "groundControlStation": {
+          "title": "Trạm điều khiển UAV di động (Mobile GCS)",
+          "description": "Thiết kế trạm điều khiển gọn nhẹ, hỗ trợ truyền hình ảnh, dữ liệu và điều khiển UAV tại hiện trường"
+        },
+        "smartFactory": {
+          "title": "Hệ thống giám sát Smart Factory tích hợp IoT",
+          "description": "Thu thập dữ liệu cảm biến, giám sát thiết bị và dự báo bảo trì bằng mô hình học máy"
+        }
+      },
+      "contact": {
+        "section": "Liên hệ / Đăng ký tư vấn",
+        "headline": "CÙNG KIẾN TẠO TƯƠNG LAI.",
+        "subtext": "Kết nối với đội ngũ của chúng tôi để được tư vấn, hợp tác hoặc trải nghiệm demo giải pháp.",
+        "button": "Liên hệ với bộ phận kinh doanh"
       }
     },
     "aboutUs": {
@@ -95,5 +182,9 @@
         }
       }
     }
+  },
+  "common": {
+    "readMore": "Xem thêm",
+    "viewDetail": "Xem chi tiết"
   }
 }

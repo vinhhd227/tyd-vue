@@ -95,7 +95,7 @@
           <slot name="right">
             <el-dropdown class="tw:hover:border-0">
               <span class="tw:flex tw:items-center tw:justify-center">
-                <iconfy
+                <iconify
                   icon="mingcute:globe-2-fill"
                   class="tw:text-2xl tw:text-black"
                 />
@@ -121,7 +121,7 @@
               class="tw:flex tw:items-center tw:md:hidden"
               @click="toggleSideMenu()"
             >
-              <iconfy
+              <iconify
                 icon="mingcute:list-check-line"
                 class="tw:text-3xl tw:text-black"
               />
@@ -336,11 +336,11 @@ const user = ref(null);
 
 const menus = reactive([
   {
-    label: "header.home",
+    label: "layout.header.home",
     path: "/",
   },
   {
-    label: "header.products",
+    label: "layout.header.products",
     children: [
       {
         label: "UAV & Ground Control",
@@ -374,8 +374,8 @@ const menus = reactive([
     ],
   },
   // { label: "Resources", path: "/tai-nguyen" },
-  { label: "header.about", path: "/about-us" },
-  { label: "header.contact", path: "/contact" },
+  { label: "layout.header.about", path: "/about-us" },
+  { label: "layout.header.contact", path: "/contact" },
 ]);
 
 const indexToPath = computed(() => {

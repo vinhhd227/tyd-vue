@@ -1,21 +1,29 @@
 <template>
-  <Banner/>
+  <Banner />
   <el-container
     :class="[
       'tw:mx-auto',
       'tw:flex tw:flex-col tw:items-center tw:justify-center',
     ]"
   >
-    <Partner />
-    <OurValue />
     <OurStory />
+    <OurCoreSolution />
+    <OurValue />
+    <OurHighlight />
+    <Partner />
+    <Contact />
+    <!-- <OurProduct /> -->
   </el-container>
 </template>
 
 <script setup>
-import Banner from "./Home/Banner.vue"
+import Banner from "./Home/Banner.vue";
 import OurStory from "./Home/OurStory.vue";
 import OurValue from "./Home/OurValue.vue";
+import OurProduct from "./Home/OurProduct.vue";
+import OurCoreSolution from "./Home/OurCoreSolution.vue";
+import OurHighlight from "./Home/OurHighlight.vue";
+import Contact from "./Home/Contact.vue";
 import HeroBanner from "@/components/HeroBanner.vue";
 import ScrollBanner from "@/components/ScrollBanner.vue";
 import FlyCounting from "./Home/FlyCounting.vue";
@@ -26,7 +34,6 @@ import slidermain from "./Home/slidermain.vue";
 import item from "./Home/item.vue";
 import SuccessStories from "./Home/SuccessStories.vue";
 import Partner from "./Home/Partner.vue";
-
 </script>
 
 <style scope>

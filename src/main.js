@@ -16,10 +16,14 @@ import dayjsPlugin from "./plugins/dayjs";
 import sonnerPlugin from "./plugins/sonner";
 import { setupVeeValidate } from "./plugins/vee-validate.config";
 import { MotionPlugin } from "@vueuse/motion";
-import { i18n, initI18n } from './plugins/i18n';
+import { i18n, initI18n } from "./plugins/i18n";
+import { swiperModules } from "./plugins/swiper.js";
 // Component
-import Iconfy from "./components/Iconfy.vue";
+import iconify from "./components/iconify.vue";
 import Vue3Marquee from "vue3-marquee";
+import { Swiper, SwiperSlide } from "swiper/vue";
+//
+import CustomBackground from "./components/CustomBackground.vue";
 
 import { createHead } from "@vueuse/head";
 import router from "./router";
@@ -35,10 +39,14 @@ app.use(MotionPlugin);
 app.use(createPinia());
 app.use(ElementPlus);
 app.use(router);
-app.component("iconfy", Iconfy);
+app.component("iconify", iconify);
+app.component("swiper", Swiper);
+app.component("swiper-slide", SwiperSlide);
+app.component("custom-background", CustomBackground);
+app.config.globalProperties.$swiperModules = swiperModules;
 app.use(Vue3Marquee);
 app.use(createHead());
 initI18n().then(() => {
-  app.mount('#app');
+  app.mount("#app");
 });
 export default router;

@@ -10,7 +10,7 @@
       :class="[
         'tw:relative',
         'tw:w-[100vw]',
-        'tw:lg:pt-40 tw:4xl:py-50 tw:pb-20 tw:pt-40  tw:mb-10',
+        'tw:lg:pt-40 tw:4xl:py-50 tw:pb-20 tw:pt-40 tw:mb-10',
         'tw:bg-[url(/media/images/contact-banner.png)]',
         'tw:bg-cover tw:bg-center tw:overflow-hidden',
       ]"
@@ -35,7 +35,7 @@
         v-motion-slide-visible-left
         :span="24"
         :lg="10"
-        :class="['tw:flex tw:flex-col tw:gap-4', 'tw:pb-10']"
+        :class="['tw:flex tw:flex-col tw:gap-2', 'tw:pb-10']"
       >
         <h2 class="tw:text-3xl tw:font-semibold tw:font-heading">
           {{ $t("pages.contact.info.companyName") }}
@@ -64,7 +64,7 @@
                 info.isHover ? 'tw:bg-white' : 'tw:bg-gray-200',
               ]"
             >
-              <iconfy
+              <iconify
                 :icon="info.icon"
                 :class="[
                   'tw:text-2xl',
@@ -85,12 +85,31 @@
             </div>
           </div>
         </a>
+        <div class="tw:flex">
+          <h5 class="tw:font-semibold tw:font-heading">Follow us on:</h5>
+          <div class="tw:flex tw:items-center-safe tw:gap-3 tw:mx-2">
+            <el-tooltip
+              v-for="link in socialLinks"
+              class="box-item"
+              effect="dark"
+              :content="link.label"
+              placement="top-start"
+            >
+              <a :href="link.url">
+                <iconify
+                  :icon="link.icon"
+                  :class="[
+                    'tw:text-2xl',
+                    'tw:transition-all tw:duration-500',
+                    link.hoverColor,
+                  ]"
+                />
+              </a>
+            </el-tooltip>
+          </div>
+        </div>
       </el-col>
-      <el-col
-        v-motion-slide-visible-right
-        :span="24"
-        :lg="14"
-      >
+      <el-col v-motion-slide-visible-right :span="24" :lg="14">
         <el-card :class="['tw:rounded-2xl', 'tw:pt-3 tw:px-2']">
           <el-form
             spinner="tw:text-black"
@@ -219,7 +238,33 @@ const contactInfo = reactive([
     isHover: false,
   },
 ]);
-
+const socialLinks = [
+  {
+    label: "Linkedin",
+    url: "",
+    icon: "mdi:linkedin",
+    hoverColor: "tw:hover:text-sky-600",
+  },
+  {
+    label: "Facebook",
+    url: "https://www.facebook.com/vintech.org.vn/",
+    icon: "mdi:facebook",
+    hoverColor: "tw:hover:text-blue-600",
+  },
+  {
+    label: "Youtube",
+    url: "https://www.youtube.com/@vintech3544",
+    icon: "mdi:youtube",
+    hoverColor: "tw:hover:text-red-600",
+  },
+  {
+    label: "Instagram",
+    url: "",
+    icon: "mdi:instagram",
+    hoverColor:
+      "tw:hover:text-pink-600",
+  },
+];
 const schema = z
   .object({
     fullName: z

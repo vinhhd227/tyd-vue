@@ -3,7 +3,7 @@
     class="tw:h-[54px] tw:flex tw:items-center tw:justify-start tw:font-heading"
   >
     © {{ new Date().getFullYear() }} Make with &nbsp;
-    <iconfy icon="fluent-emoji-flat:red-heart" /> &nbsp; by TYD
+    <iconify icon="fluent-emoji-flat:red-heart" /> &nbsp; by TYD
   </div>
 </template>
 

@@ -2,7 +2,7 @@
   <div :class="['tw:pb-0 tw:pt-20 tw:md:pt-25']">
     <el-carousel class="hero-carousel">
       <el-carousel-item v-motion-fade v-for="item in hero" :key="item">
-        <div :class="['tw:h-full tw:w-full', 'tw:bg-white']">
+        <div :class="['tw:h-full tw:w-full', 'tw:bg-transparent']">
           <div
             :class="[
               'tw:h-full tw:w-full tw:lg:w-[80vw]',
@@ -38,7 +38,7 @@
               </p>
               <el-button v-motion-pop-visible size="large" color="#000000">
                 <span class="tw:mr-2">{{ $t(item.cta) }}</span>
-                <iconfy icon="mingcute:arrow-right-fill" />
+                <iconify icon="mingcute:arrow-right-fill" />
               </el-button>
             </div>
             <div
@@ -113,5 +113,8 @@ const hero = reactive([
   :deep(.hero-carousel .el-carousel__container) {
     height: 800px;
   }
+}
+.el-carousel__item {
+  background-color: transparent !important;
 }
 </style>

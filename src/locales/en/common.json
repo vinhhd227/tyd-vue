@@ -1,9 +1,38 @@
 {
-  "header": {
-    "home": "Home",
-    "about": "About",
-    "products": "Products",
-    "contact": "Contact us"
+  "layout": {
+    "header": {
+      "home": "Home",
+      "about": "About",
+      "products": "Products",
+      "contact": "Contact us"
+    },
+    "footer": {
+      "description": "Integrated UAV, cybersecurity & automation solutions for industry.",
+      "company": {
+        "title": "Company",
+        "projects": "Projects",
+        "about": "About Us",
+        "contact": "Contact"
+      },
+      "solutions": {
+        "title": "Solutions",
+        "uav_gcs": "UAV & GCS",
+        "cybersecurity": "Cybersecurity",
+        "automation": "Automation"
+      },
+      "legal": {
+        "title": "Legal",
+        "privacy": "Privacy Policy",
+        "cookie": "Cookie Policy",
+        "terms": "Terms of Service"
+      },
+      "newsletter": {
+        "title": "Get our latest news",
+        "placeholder": "you@company.com",
+        "subscribe": "Subscribe"
+      },
+      "copyright": "© {year} TYD Technology JSC. All rights reserved."
+    }
   },
   "pages": {
     "home": {
@@ -24,7 +53,30 @@
           "cta": "Discover Robotics"
         }
       },
+      "ourStory": {
+        "label": "OUR STORY",
+        "title": "We Believe in the Power of Technology",
+        "description": "At our core, we are driven by the transformative potential of technology. From unmanned aerial systems to cybersecurity and robotics, we create bridges between people, machines, and data — helping businesses explore new possibilities and operate smarter, safer, and more efficiently.",
+        "cta": "Explore More"
+      },
+      "ourCoreSolution": {
+        "label": "Our Products & Solutions",
+        "description": "We deliver end-to-end technology solutions combining hardware, software, and intelligence — from UAV systems to cybersecurity and automation — enabling businesses to operate smarter, safer, and more efficiently",
+        "drone": {
+          "title": "Drone Platform",
+          "description": "Delivering professional UAV solutions for search and rescue, surveillance, and industrial operations, including aerial vehicles, ground control stations (GCS), and long-range data link systems — ensuring reliability and safety in critical missions"
+        },
+        "cybersecurity": {
+          "title": "Cyber Security",
+          "description": "Safeguard your digital infrastructure with real-time threat monitoring, detection, and response — ensuring the integrity of your data, networks, and applications"
+        },
+        "automation": {
+          "title": "Automation & Robotics",
+          "description": "Implement autonomous robotics and flexible automation systems integrated with AI and vision technology to boost productivity and reliability in modern manufacturing"
+        }
+      },
       "ourValue": {
+        "label": "Our core values",
         "innovation": {
           "title": "Innovation",
           "description": "We constantly innovate to bring smarter, more efficient, and sustainable solutions"
@@ -38,11 +90,46 @@
           "description": "We pursue the highest standards in technology, service, and reliability"
         }
       },
-      "ourStory": {
-        "label": "OUR STORY",
-        "title": "We Believe in the Power of Technology",
-        "description": "At our core, we are driven by the transformative potential of technology. From unmanned aerial systems to cybersecurity and robotics, we create bridges between people, machines, and data — helping businesses explore new possibilities and operate smarter, safer, and more efficiently.",
-        "cta": "Explore More"
+      "ourHighlights": {
+        "label": "Featured Projects & Applications",
+        "constructionSites": {
+          "title": "Drone Monitoring for Construction Sites",
+          "description": "Real-time aerial surveillance and safety inspection for large-scale infrastructure projects"
+        },
+        "rescueUAV": {
+          "title": "Emergency Rescue UAV Operations",
+          "description": "Long-range UAV systems for search, rescue, and rapid information relay in hazardous conditions"
+        },
+        "networkSecurity": {
+          "title": "AI-based Network Intrusion Detection",
+          "description": "Machine learning models to detect anomalies and prevent cyber attacks in early stages"
+        },
+        "enterpriseSecurity": {
+          "title": "Enterprise Cybersecurity Dashboard",
+          "description": "Real-time security visualization and risk monitoring platform for enterprise infrastructure."
+        },
+        "factoryAutomation": {
+          "title": "Autonomous Mobile Robots in Manufacturing",
+          "description": "AMR fleet for internal logistics and intelligent material transport between factory zones"
+        },
+        "quadrupedRobot": {
+          "title": "Quadruped Rescue & Patrol Robot",
+          "description": "Agile four-legged robot designed for rough terrain operations, equipped with sensors and cameras for industrial inspection, rescue, and security patrols"
+        },
+        "groundControlStation": {
+          "title": "Mobile Ground Control Station (GCS)",
+          "description": "Compact, field-ready GCS for UAV control, telemetry, and live video streaming"
+        },
+        "smartFactory": {
+          "title": "IoT-enabled Smart Factory Monitoring System",
+          "description": "Integrated IoT sensors and predictive maintenance powered by machine learning analytics"
+        }
+      },
+      "contact": {
+        "section": "CONTACT / CTA",
+        "headline": "LET’S BUILD THE FUTURE TOGETHER.",
+        "subtext": "Contact our team for consultation, partnership, or demo.",
+        "button": "Talk to Sales"
       }
     },
     "aboutUs": {
@@ -80,5 +167,9 @@
         }
       }
     }
+  },
+  "common": {
+    "readMore": "Read more",
+    "viewDetail": "View detail"
   }
 }

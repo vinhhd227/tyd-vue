@@ -34,7 +34,7 @@
         @click="adminUi.toggleDesktopPin()"
         title="Ghim / Bỏ ghim"
       >
-        <iconfy
+        <iconify
           :icon="
             adminUi.desktopSidebarPinned ? 'stash:circle-dot' : 'stash:circle'
           "
@@ -66,7 +66,7 @@
             ]"
           >
             <template #title>
-              <iconfy :icon="item.icon" size="22" class="tw:mr-2" />
+              <iconify :icon="item.icon" size="22" class="tw:mr-2" />
               <span
                 v-motion-pop-visible
                 :duration="100"
@@ -102,7 +102,7 @@
               'tw:text-slate-800/90',
             ]"
           >
-            <iconfy :icon="item.icon" size="22" class="tw:mr-2" />
+            <iconify :icon="item.icon" size="22" class="tw:mr-2" />
             <span
               v-motion-pop-visible
               :duration="100"

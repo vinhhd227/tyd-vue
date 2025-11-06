@@ -14,7 +14,7 @@
         @click="adminUi.toggleMobileSidebar()"
         class="tw:inline-flex tw:items-center tw:justify-center tw:p-2 tw:xl:hidden"
       >
-        <iconfy icon="solar:hamburger-menu-linear" width="22" />
+        <iconify icon="solar:hamburger-menu-linear" width="22" />
       </el-button>
     </div>
 
@@ -30,7 +30,7 @@
 
     <div class="right">
       <el-button text>
-        <iconfy icon="solar:bell-linear" width="22" />
+        <iconify icon="solar:bell-linear" width="22" />
       </el-button>
       <el-dropdown>
         <span class="el-dropdown-link flex items-center gap-2">
