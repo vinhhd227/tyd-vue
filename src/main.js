@@ -19,7 +19,7 @@ import { MotionPlugin } from "@vueuse/motion";
 import { i18n, initI18n } from "./plugins/i18n";
 import { swiperModules } from "./plugins/swiper.js";
 // Component
-import iconify from "./components/iconify.vue";
+import iconify from "./components/Iconify.vue";
 import Vue3Marquee from "vue3-marquee";
 import { Swiper, SwiperSlide } from "swiper/vue";
 //

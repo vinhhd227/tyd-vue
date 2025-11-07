@@ -4,13 +4,7 @@
       "home": "Trang chủ",
       "about": "Về chúng tôi",
       "products": "Sản phẩm",
-      "contact": "Liên hệ",
-      "categories": {
-        "drone": "Drone",
-        "cybersecurity": "Cybersecurity",
-        "automation": "Robotics",
-        "products": {}
-      }
+      "contact": "Liên hệ"
     },
     "footer": {
       "description": "Giải pháp UAV, an ninh mạng và tự động hóa công nghiệp.",
@@ -34,7 +28,7 @@
       },
       "newsletter": {
         "title": "Đăng ký nhận tin",
-        "placeholder": "you@company.com",
+        "placeholder": "Your Email",
         "subscribe": "Đăng ký"
       },
       "copyright": "© {year} Công Ty Cổ Phần Công Nghệ TYD. Bản quyền thuộc về TYD."
@@ -161,7 +155,7 @@
       "info": {
         "companyName": "CÔNG TY CỔ PHẦN CÔNG NGHỆ TYD",
         "address": "TT3-32 Đường CN 9, Hòe Thị, Nam Từ Liêm, Hà Nội, Việt Nam",
-        "email": "contact@tydvn.com",
+        "email": "{'contact@tydvn.com'}",
         "phone": "0000 000 000"
       },
       "form": {

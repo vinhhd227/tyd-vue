@@ -20,7 +20,7 @@
       }"
     />
     <el-container
-      v-motion-slide-visible-bottom
+      
       :class="['tw:mt-3', 'tw:w-full', 'tw:lg:w-[80vw]']"
     >
       <el-card class="tw:w-full tw:bg-white tw:backdrop-blur tw:rounded-2xl">
@@ -30,7 +30,7 @@
             'tw:grid tw:grid-cols-12 tw:items-center tw:gap-5',
           ]"
         >
-          <div v-motion-slide-visible-bottom class="tw:col-span-12 tw:md:col-span-6 tw:xl:col-span-3 tw:order-1">
+          <div  class="tw:col-span-12 tw:md:col-span-6 tw:xl:col-span-3 tw:order-1">
             <img
               src="/media/images/tyd-logo.svg"
               alt="TYD Logo"
@@ -53,12 +53,12 @@
               :class="group.label.includes('legal') ? 'tw:col-span-2 tw:md:col-span-1' : ''"
             >
               <h4
-                v-motion-slide-visible-bottom
+                
                 class="tw:font-semibold tw:text-gray-700 tw:mb-3"
               >
                 {{ $t(group.label) }}
               </h4>
-              <ul v-motion-slide-visible-bottom class="tw:space-y-2">
+              <ul  class="tw:space-y-2">
                 <li v-for="link in group.links">
                   <a
                     :href="link.route"
@@ -70,7 +70,7 @@
             </div>
           </nav>
 
-          <div v-motion-slide-visible-bottom class="tw:col-span-12 tw:md:col-span-6 tw:xl:col-span-3 tw:order-3 tw:md:order-2 tw:lg:order-2 tw:xl:order-3">
+          <div  class="tw:col-span-12 tw:md:col-span-6 tw:xl:col-span-3 tw:order-3 tw:md:order-2 tw:lg:order-2 tw:xl:order-3">
             <p
               class="tw:font-semibold tw:text-lg tw:font-heading tw:text-gray-900"
             >

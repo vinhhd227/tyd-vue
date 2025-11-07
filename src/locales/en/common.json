@@ -28,7 +28,7 @@
       },
       "newsletter": {
         "title": "Get our latest news",
-        "placeholder": "you@company.com",
+        "placeholder": "Your Email",
         "subscribe": "Subscribe"
       },
       "copyright": "© {year} TYD Technology JSC. All rights reserved."
@@ -146,7 +146,7 @@
       "info": {
         "companyName": "TYD TECHNOLOGY JSC",
         "address": "No. TT3-32, CN9 Street, Hoe Thi, Nam Tu Liem District, Hanoi, Vietnam",
-        "email": "contact@tydvn.com",
+        "email": "{'contact@tydvn.com'}",
         "phone": "(+84) 000 000 000"
       },
       "form": {
