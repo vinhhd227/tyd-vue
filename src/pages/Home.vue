@@ -12,7 +12,6 @@
     <OurHighlight />
     <Partner />
     <Contact />
-    <!-- <OurProduct /> -->
   </el-container>
 </template>
 
@@ -20,19 +19,9 @@
 import Banner from "./Home/Banner.vue";
 import OurStory from "./Home/OurStory.vue";
 import OurValue from "./Home/OurValue.vue";
-import OurProduct from "./Home/OurProduct.vue";
 import OurCoreSolution from "./Home/OurCoreSolution.vue";
 import OurHighlight from "./Home/OurHighlight.vue";
 import Contact from "./Home/Contact.vue";
-import HeroBanner from "@/components/HeroBanner.vue";
-import ScrollBanner from "@/components/ScrollBanner.vue";
-import FlyCounting from "./Home/FlyCounting.vue";
-import Solutions from "./Home/Solutions.vue";
-import Skydio from "./Home/Skydio.vue";
-import Showcase from "./Home/Showcase.vue";
-import slidermain from "./Home/slidermain.vue";
-import item from "./Home/item.vue";
-import SuccessStories from "./Home/SuccessStories.vue";
 import Partner from "./Home/Partner.vue";
 </script>
 
