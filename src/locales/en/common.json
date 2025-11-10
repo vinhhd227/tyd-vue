@@ -3,7 +3,28 @@
     "header": {
       "home": "Home",
       "about": "About",
-      "products": "Products",
+      "solutions": {
+        "title": "Solutions",
+        "uav_gcs": {
+          "title": "UAV & GCS",
+          "dronePlatform": "Drone Platform",
+          "groundControlStation": "Ground Control Station",
+          "communicationModule": "Data Link / Communication Module",
+          "payload_gimbal": "Payload & Gimbal System",
+          "power_chargingSystem": "Power & Charging System"
+        },
+        "cybersecurity": {
+          "title": "Cybersecurity",
+          "application_security": "Comprehensive Application Security Solution",
+          "security_device_evaluation": "Information Security Device Evaluation System",
+          "cyber_threat_intelligence": "Cyber Threat Intelligence Solution"
+        },
+        "automation": {
+          "title": "Automation",
+          "quadrupedRobot": "Quadruped Robot Platform",
+          "intelligentManufacturing": "Intelligent Manufacturing"
+        }
+      },
       "contact": "Contact us"
     },
     "footer": {
@@ -199,7 +220,8 @@
           "email": "Invalid email",
           "phone": "Invalid phone number"
         }
-      }
+      },
+      "followUs": "Follow us on"
     }
   },
   "common": {

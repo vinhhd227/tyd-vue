@@ -86,10 +86,13 @@
           </div>
         </a>
         <div class="tw:flex">
-          <h5 class="tw:font-semibold tw:font-heading">Follow us on:</h5>
+          <h5 class="tw:font-semibold tw:font-heading">
+            {{  $t("pages.contact.followUs") }}:
+          </h5>
           <div class="tw:flex tw:items-center-safe tw:gap-3 tw:mx-2">
             <el-tooltip
               v-for="link in socialLinks"
+              :key="link.label"
               class="box-item"
               effect="dark"
               :content="link.label"
@@ -220,7 +223,7 @@ const contactInfo = reactive([
     icon: "mingcute:location-3-fill",
     label: "pages.contact.label.address",
     value: "pages.contact.info.address",
-    ref: "https://maps.app.goo.gl/yRKFWwXLWmn3CBYt6",
+    ref: "https://maps.app.goo.gl/aSFb8tzmr6WHvaKEA",
     isHover: false,
   },
   {

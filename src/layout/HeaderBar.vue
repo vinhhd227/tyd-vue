@@ -172,8 +172,9 @@
                 'tw:transition-all tw:duration-300 tw:ease-in-out',
               ]"
             >
-              <RouterLink :to="item.path" class="">
-                {{ $t(item.label) }}
+              <RouterLink :to="item.path" class="tw:flex tw:items-center">
+                <iconify :icon="item.icon" class="tw:mr-2" />
+                <span> {{ $t(item.label) }}</span>
               </RouterLink>
             </li>
           </ul>
@@ -214,13 +215,6 @@
             </li>
           </ul>
         </div>
-        <!-- <div
-          :class="[
-            'tw:w-full tw:h-full tw:max-w-1/3',
-            'tw:py-30 tw:pr-20 tw:pl-5',
-            'tw:bg-gray-200',
-          ]"
-        ></div> -->
       </div>
       <el-scrollbar
         :class="[
@@ -340,40 +334,74 @@ const menus = reactive([
     path: "/",
   },
   {
-    label: "layout.header.products",
+    label: "layout.header.solutions.title",
     children: [
       {
-        label: "UAV & Ground Control",
-        path: "",
+        label: "layout.header.solutions.uav_gcs.title",
+        path: "/",
+        icon: "mingcute:drone-fill",
         products: [
-          { label: "Ground Control Station", path: "/san-pham/uav/gcs" },
-          { label: "Gimbal", path: "/san-pham/uav/gimbal" },
-          { label: "Camera", path: "/san-pham/uav/camera" },
+          { label: "layout.header.solutions.uav_gcs.dronePlatform", path: "/" },
+          {
+            label: "layout.header.solutions.uav_gcs.groundControlStation",
+            path: "/",
+          },
+          {
+            label: "layout.header.solutions.uav_gcs.communicationModule",
+            path: "/",
+          },
+          {
+            label: "layout.header.solutions.uav_gcs.payload_gimbal",
+            path: "/",
+          },
+          {
+            label: "layout.header.solutions.uav_gcs.power_chargingSystem",
+            path: "/",
+          },
         ],
         isExpanded: false,
       },
       {
-        label: "Cyber Security",
+        label: "layout.header.solutions.cybersecurity.title",
         path: "",
+        icon: "fluent:shield-lock-16-regular",
         products: [
-          { label: "Threat Detection", path: "/san-pham/uav/gcs" },
-          { label: "Cyber Defense", path: "/san-pham/uav/gimbal" },
-          { label: "Anti DDOS", path: "/san-pham/uav/camera" },
+          {
+            label: "layout.header.solutions.cybersecurity.application_security",
+            path: "/",
+          },
+          {
+            label:
+              "layout.header.solutions.cybersecurity.security_device_evaluation",
+            path: "/",
+          },
+          {
+            label:
+              "layout.header.solutions.cybersecurity.cyber_threat_intelligence",
+            path: "/",
+          },
         ],
         isExpanded: false,
       },
       {
-        label: "Automation",
+        label: "layout.header.solutions.automation.title",
         path: "",
+        icon: "streamline-ultimate:factory-industrial-robot-arm-1-bold",
         products: [
-          { label: "4 leg robot", path: "/san-pham/uav/gcs" },
-          { label: "Intelligent Manufacturing", path: "/san-pham/uav/gimbal" },
+          {
+            label: "layout.header.solutions.automation.quadrupedRobot",
+            path: "/",
+          },
+          {
+            label:
+              "layout.header.solutions.automation.intelligentManufacturing",
+            path: "/",
+          },
         ],
         isExpanded: false,
       },
     ],
   },
-  // { label: "Resources", path: "/tai-nguyen" },
   { label: "layout.header.about", path: "/about-us" },
   { label: "layout.header.contact", path: "/contact" },
 ]);

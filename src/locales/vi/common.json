@@ -3,7 +3,28 @@
     "header": {
       "home": "Trang chủ",
       "about": "Về chúng tôi",
-      "products": "Sản phẩm",
+      "solutions": {
+        "title": "Giải pháp",
+        "uav_gcs": {
+          "title": "UAV & GCS",
+          "dronePlatform": "Nền tảng thiết bị bay",
+          "groundControlStation": "Trạm điều khiển mặt đất",
+          "communicationModule": "Hệ thống truyền dữ liệu",
+          "payload_gimbal": "Giải pháp tải trọng & gimbal",
+          "power_chargingSystem": "Giải pháp nguồn & sạc thông minh"
+        },
+        "cybersecurity": {
+          "title": "An ninh mạng",
+          "application_security": "Giải pháp Bảo mật Ứng dụng Toàn Diện",
+          "security_device_evaluation": "Hệ thống Đánh giá Thiết bị Đảm bảo An toàn Thông tin",
+          "cyber_threat_intelligence": "Giải pháp Thông tin Mối đe dọa An ninh Mạng"
+        },
+        "automation": {
+          "title": "Tự động hóa",
+          "quadrupedRobot": "Nền tảng Robot bốn chân",
+          "intelligentManufacturing": "Nhà máy thông minh"
+        }
+      },
       "contact": "Liên hệ"
     },
     "footer": {
@@ -28,7 +49,7 @@
       },
       "newsletter": {
         "title": "Đăng ký nhận tin",
-        "placeholder": "Your Email",
+        "placeholder": "Email",
         "subscribe": "Đăng ký"
       },
       "copyright": "© {year} Công Ty Cổ Phần Công Nghệ TYD. Bản quyền thuộc về TYD."
@@ -206,7 +227,8 @@
           "email": "Email không hợp lệ",
           "phone": "Số điện thoại không hợp lệ"
         }
-      }
+      },
+      "followUs": "Theo dõi chung tôi"
     }
   },
   "common": {
