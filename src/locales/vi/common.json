@@ -133,6 +133,38 @@
       }
     },
     "aboutUs": {
+      "banner": {
+        "subTitle": "CÂU CHUYỆN CỦA CHÚNG TÔI",
+        "title": "Chúng Tôi Tin Vào Sức Mạnh Của Công Nghệ",
+        "description": "Tận sâu bên trong, chúng tôi tin rằng công nghệ có thể thay đổi cách con người kết nối và sáng tạo. Từ thiết bị bay không người lái đến an ninh mạng và robot thông minh, chúng tôi kiến tạo cầu nối giữa con người, máy móc và dữ liệu — giúp doanh nghiệp khám phá khả năng mới, vận hành an toàn và hiệu quả hơn"
+      },
+      "about": {
+        "title": "Về chúng tôi",
+        "paragraph1": "TYD Technology là một công ty công nghệ định hướng tương lai, được hình thành bởi những kỹ sư và chuyên gia với chung niềm đam mê công nghệ và tự động hóa.",
+        "paragraph2": " Chúng tôi phát triển các giải pháp tích hợp giữa trí tuệ nhân tạo, điều khiển tự động và bảo mật số, mang đến những sản phẩm linh hoạt, bền vững và phù hợp với nhu cầu thực tế của doanh nghiệp trong kỷ nguyên công nghiệp 4.0. Mỗi giải pháp của chúng tôi đều hướng đến mục tiêu: giúp con người làm việc an toàn hơn, hiệu quả hơn, và thông minh hơn."
+      },
+      "whatWeDo": {
+        "ourMission": {
+          "title": "Sứ mệnh",
+          "description": "Thúc đẩy sự đổi mới trong các hệ thống tự động và kết nối thông minh – nơi công nghệ hỗ trợ con người phát triển bền vững hơn."
+        },
+        "ourVision": {
+          "title": "Tầm Nhìn",
+          "description": "Trở thành đơn vị tiên phong trong lĩnh vực UAV, điều khiển mặt đất và tự động hóa thông minh, đóng góp vào tương lai an toàn và hiệu quả của nền công nghiệp hiện đại."
+        },
+        "ourCoreValues": {
+          "title": "Giá trị cốt lõi",
+          "description": "Chúng tôi tin rằng một công ty công nghệ chỉ có thể phát triển bền vững khi được xây dựng trên những giá trị đúng đắn. Ba giá trị cốt lõi – Đổi mới, Chính trực, Ưu việt – là nền tảng trong mọi hoạt động tại TYD Technology."
+        }
+      },
+      "whyChooseUs": {
+        "quality": "Đảm Bảo Chất Lượng",
+        "structure": "Cấu Trúc Linh Hoạt",
+        "deployment": "Triển Khai Nhanh",
+        "cost": "Chi Phí Minh Bạch",
+        "performance": "Hiệu Suất Vượt Trội",
+        "design": "Thiết Kế Chuyên Biệt"
+      },
       "aboutTyd": "Về TYD",
       "ourMission": "Sứ mệnh của chung tôi là tăng tốc chuyển đổi công nghệ cho doanh nghiệp và cộng đồng bằng các giải pháp thông minh, hiệu quả, dễ triển khai và có tính ứng dụng cao.",
       "ourFuture": {

@@ -40,5 +40,9 @@
   .el-menu--horizontal .el-menu-item.is-active .tw-menu-underline::after {
     @apply tw:w-full;
   }
-
+  /* Chiều rộng của container */
+  .tw-container-default {
+    @apply tw:h-full tw:w-full tw:lg:w-[80vw] tw:px-4 tw:lg:px-0 tw:mx-auto;
+  }
 }
+

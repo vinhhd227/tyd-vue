@@ -1,15 +1,16 @@
 <template>
-  <el-container
-    direction="vertical"
-    :class="['tw:mx-auto tw:pb-5', 'tw:z-10 tw:h-full', 'tw:max-w-[70vw]']"
-  >
-    <OurMission />
-    <OurFuture />
-    <OurStories />
-  </el-container>
+  <Banner />
+  <AboutUs />
+  <WhatWeDo />
+  <Partner />
+  <WhyChooseUs />
+  <Contact />
 </template>
 <script setup>
-import OurMission from "./AboutUs/OurMission.vue";
-import OurFuture from "./AboutUs/OurFuture.vue";
-import OurStories from "./AboutUs/OurStories.vue";
+import Banner from "./AboutUs/Banner.vue";
+import AboutUs from "./AboutUs/AboutUs.vue";
+import WhatWeDo from "./AboutUs/WhatWeDo.vue";
+import Partner from "./AboutUs/Partner.vue";
+import WhyChooseUs from "./AboutUs/WhyChooseUs.vue";
+import Contact from "./AboutUs/Contact.vue";
 </script>

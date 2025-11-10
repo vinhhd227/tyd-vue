@@ -133,8 +133,42 @@
       }
     },
     "aboutUs": {
+      "banner": {
+        "subTitle": "OUR STORY",
+        "title": "We Believe in the Power of Technology",
+        "description": "Deep inside, we believe that technology can change the way people connect and create. From unmanned aerial vehicles to cybersecurity and intelligent robots, we build bridges between humans, machines, and data — helping businesses discover new capabilities, operate safely, and more efficiently"
+      },
+
+      "about": {
+        "title": "About Us",
+        "paragraph1": "TYD Technology is a forward-thinking technology company, founded by engineers and experts who share a deep passion for innovation and automation.",
+        "paragraph2": "We develop integrated solutions that combine artificial intelligence, automated control, and digital security — delivering flexible, sustainable, and practical products tailored to the real-world needs of modern enterprises in the Industry 4.0 era. Each of our solutions is designed with a single goal in mind: helping people work safer, smarter, and more efficiently."
+      },
+      "whatWeDo": {
+        "ourMission": {
+          "title": "Our Mission",
+          "description": "To drive innovation in automation and intelligent connectivity — where technology empowers people toward a more sustainable future."
+        },
+        "ourVision": {
+          "title": "Our Vision",
+          "description": "To become a pioneer in UAV systems, ground control, and smart automation, contributing to a safer and more efficient future for modern industry."
+        },
+        "ourCoreValues": {
+          "title": "Our Core Values",
+          "description": "We believe that a technology company can only grow sustainably when built on the right values. Our three core principles — Innovation, Integrity, and Excellence — are the foundation of everything we do at TYD Technology."
+        }
+      },
+      "whyChooseUs": {
+        "quality": "Quality Assurance",
+        "structure": "Flexible Architecture",
+        "deployment": "Rapid Deployment",
+        "cost": "Transparent Costing",
+        "performance": "Exceptional Performance",
+        "design": "Tailored Design"
+      },
       "ourMission": "Our mission is to provide a complete solution to the needs of our customers, while ensuring that the quality of our products is always at the top of our priority list."
     },
+
     "contact": {
       "title": "Contact",
       "subtitle": "Our team is ready to assist you — from solution consulting to demos and quotations.",
